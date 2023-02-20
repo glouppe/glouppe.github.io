@@ -96,7 +96,7 @@ Powered by Hydejack v9.1.5 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2023-02-15T10:38:51+01:00',
+    INDEX_KEY: 'index--2023-02-20T14:13:11+01:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -209,6 +209,38 @@ While the simulators can generate samples of observations \(x \sim p(x | \theta)
 <p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>.</p>
 
 <p><img src="/msc-thesis/msc-2023-sbi.png" alt="" /></p>
+
+<h2 id="simulation-based-inference-for-exoplanet-astrometry">Simulation-based inference for exoplanet astrometry</h2>
+
+<p>Detection and characterization of exoplanets using direct imaging is one
+of the most exciting frontiers in modern astronomy. By capturing a
+series of snapshot images of an exoplanet, we can understand the
+properties of its planetary system. Fitting an exoplanet’s astrometry
+data allows us to understand the planet’s formation and evolution, and
+sometimes even detect unseen planets. A planet’s orbit is parameterized
+by eight Keplerian elements: semi-major axis, eccentricity, inclination
+angle, argument of periastron of the secondary’s orbit, longitude of
+ascending node, epoch of periastron passage, parallax, and total mass.
+In an orbit fitting problem, we estimate the posterior of these
+parameters based on the exoplanet astrometry data relative to the
+primary star from telescope snapshot images. Due to the large amount of
+observational data, the high dimensionality of features to infer, and
+the potential multi-modality of posterior distributions, recovering a
+full posterior distribution is often computationally challenging.
+Traditionally, sampling-based approaches, such as importance sampling
+and Markov Chain Monte Carlo (MCMC) methods, are widely used to solve
+inference problems in computational science. But without a good proposal
+distribution in importance sampling or a good random initialization in
+MCMC, sampling approaches are often prohibitively slow to converge.</p>
+
+<p>In this project,
+we propose to use some of the latest developments in the field of
+<a href="https://doi.org/10.1073/pnas.1912789117">simulation-based inference</a> to speed up the recovery of orbital
+parameters from exoplanet imaging data sets, without making any
+simplifying assumption on the shape of the posterior distribution for
+these parameters. We will aim to reproduce the results of <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac6be9">Sun et al</a> (2022) but using generic inference algorithms such as neural ratio estimation, neural posterior estimation, or neural score estimation.</p>
+
+<p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>, <a href="mailto:olivier.absil@uliege.be">Olivier Absil</a>.</p>
 
 <h2 id="simulation-based-inference-of-neural-models-from-spikes">Simulation-based inference of neural models from spikes</h2>
 
