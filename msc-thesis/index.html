@@ -96,7 +96,7 @@ Powered by Hydejack v9.1.5 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-03-11T13:54:14+01:00',
+    INDEX_KEY: 'index--2025-04-15T11:47:42+02:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -180,50 +180,36 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 
   </header>
 
-  <p>Topic proposals for 2024-2025 can be found below. Check regularly for updates. Please contact me to schedule a meeting if you are interested in one of these topics.</p>
+  <p>A list of MSc thesis topics for 2025-2026 is proposed below. The topics are generally available for students with a background in deep learning, regardless of their specific field of study. The list is non-exhaustive, feel free to come and discuss with me.</p>
 
-<h2 id="climate-model-emulation-with-deep-generative-models">Climate model emulation with deep generative models</h2>
+<h2 id="msc-thesis-topics-around-ai-for-science">MSc thesis topics around AI for Science</h2>
 
-<p>Climate science relies on complex computer models to simulate the Earth’s climate system. These models are computationally expensive and require high-performance computing resources. As a result, they are often too slow to be used in real-time applications, such as climate prediction or extreme event attribution. Emulators are statistical models (often based on deep neural networks) that are trained to approximate the output of a complex computer model. They can be used to make predictions much faster than the original model, and can be used to quantify the uncertainty in the model’s predictions.</p>
+<p>Our research group focuses its efforts around the development and application of deep learning methods for scientific applications. MSc thesis topics are available in the following areas:</p>
 
-<p>In this project, we will explore the use of deep generative models to emulate climate models. Deep generative models are a class of deep neural networks that can learn to generate realistic samples from complex high-dimensional distributions. We will investigate diffusion models and variants to emulate the output of climate models, taking into account the complex spatiotemporal structure of the data. Challenges include the scale and structure of the data and the principled validation of the emulation results.</p>
+<ul>
+  <li>Deep generative models for scientific data</li>
+  <li>Inverse problems and simulation-based inference</li>
+  <li>Deep learning for weather and climate science (emulation, data assimilation, forecasting, downscaling, etc.)</li>
+  <li>Deep learning for oceanography</li>
+</ul>
+
+<p>Specific topics should be discussed depending on the student’s interests and background.</p>
 
 <p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a></p>
 
-<p><img src="/msc-thesis/msc-2024-climsim.png" alt="" /></p>
+<h2 id="appa-latent-diffusion-models-for-global-weather-modeling">Appa: Latent diffusion models for global weather modeling</h2>
 
-<h2 id="score-based-data-assimilation-for-weather-and-climate-models">Score-based data assimilation for weather and climate models</h2>
+<p>Appa is a 1.5B-parameter large weather model developed by our research group for global weather modeling. It builds on score-based data assimilation and latent diffusion models to produce global atmospheric trajectories at 0.25-degree resolution and 1-hour intervals. Several MSc thesis topics are available around Appa, including (one or several of the following):</p>
+<ul>
+  <li>Exploring and improving its autoencoder architecture</li>
+  <li>Exploring and improving its diffusion model architecture</li>
+  <li>Fine-tuning on real-world data</li>
+  <li>Assessing its physical consistency</li>
+</ul>
 
-<p>Data assimilation is a statistical method used to combine observations with a numerical model in order to estimate the state of a system. In the context of weather and climate models, data assimilation is used to estimate the initial conditions of the model, which are then used to make predictions.</p>
+<p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a></p>
 
-<p>In this work, we will aim to scale <a href="https://arxiv.org/abs/2306.10574">score-based data assimilation</a> to high-dimensional and complex models, such as those used in weather and climate science. This work will involve training diffusion models to approximate the prior distribution of a realistic climate system and then exploring realistic observation operators to assimilate real-world observations. Challenges include the scale of the data, the high-dimensional state space, and the principled validation of the assimilation results.</p>
-
-<p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>, <a href="mailto:francois.rozet@uliege.be">François Rozet</a></p>
-
-<p><img src="/msc-thesis/msc-2024-sda.png" alt="" /></p>
-
-<h2 id="efficient-training-of-diffusion-models">Efficient training of diffusion models</h2>
-
-<p>Diffusion models offer a powerful and flexible framework for modeling complex distributions and have shown promise in tasks such as image generation, density estimation, and inverse problems. However, the training of diffusion models can be expensive, both in terms of time and compute, especially in high-dimensional settings. In this work, we will investigate methods for accelerating the training process of diffusion models while maintaining or even improving their performance. This work will involve a review of existing approaches for training diffusion models, a study of the convergence with respect to hyper-parameters (noise schedule, architecture, …) and the development of new methods for fast training of diffusion models.</p>
-
-<p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>, <a href="mailto:francois.rozet@uliege.be">François Rozet</a></p>
-
-<p><img src="/msc-thesis/msc-2024-vdm.png" alt="" /></p>
-
-<h2 id="simulation-based-inference-of-neural-models-from-spikes">Simulation-based inference of neural models from spikes</h2>
-
-<p>A fundamental question in neuroscience is how to link observed neural activity to the unobserved biophysical mechanisms that generate this activity. For this reason, there is a critical need for
-methods to incorporate the partial and noisy data that we observe with detailed, mechanistic
-models of neural activity.</p>
-
-<p>In this project, we will explore how to estimate the parameters and the hidden variables of
-neuronal models from neuronal spike train responses. In particular, we will compare modern
-<a href="https://doi.org/10.1073/pnas.1912789117">simulation-based inference</a> methods to more traditional methods like particle filters.
-Depending on the progress, we will also investigate how to actively collect new data in closed-loop experiments to improve the inference. [<a href="/msc-thesis/msc-2023-spikes.pdf">PDF</a>]</p>
-
-<p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>, <a href="mailto:p.sacre@uliege.be">Pierre Sacré</a>.</p>
-
-<p><img src="/msc-thesis/msc-2023-spikes.png" alt="" /></p>
+<p><img src="/msc-thesis/msc-2025-appa.jpg" alt="" /></p>
 
 <h2 id="flow-cytometry-data-analysis-with-deep-learning">Flow cytometry data analysis with deep learning</h2>
 
@@ -247,24 +233,15 @@ Depending on the progress, we will also investigate how to actively collect new 
 
 <p><img src="/msc-thesis/msc-2024-batch.png" alt="" /></p>
 
-<h2 id="personal-research-project-in-deep-learning">Personal research project in deep learning</h2>
+<h2 id="large-language-models-at-nrb">Large language models at NRB</h2>
 
-<p>This thesis proposal is not tied to a specific project. Instead, it welcomes students to
-make topic proposals on open research problems of their choosing and interest. Proposals should
-be centered around deep learning. Examples of projects include:</p>
-
+<p>In collaboration with NRB, two master thesis topics are proposed on large language models (LLMs).</p>
 <ul>
-  <li>Theoretical research in deep learning</li>
-  <li>Improvements to existing deep learning algorithms or models</li>
-  <li>Application of deep learning to solve a real-world problem</li>
-  <li>Development of deep learning software</li>
+  <li>The first topic consists in assessing the robustness of LLMs to jailbreaking attacks. Jailbreaking is a technique used to bypass the restrictions of LLMs and to make them generate harmful or inappropriate content. The goal of this project is to develop and evaluate jailbreaking techniques for LLMs, and to develop countermeasures to mitigate these attacks.</li>
+  <li>The second topic consists in exploring how system prompts should be refined to guarantee constraints specific to the application domain. Multi-agent refinement strategies will be explored to ensure that the system prompts are aligned with the application domain and that the generated content is relevant and appropriate.</li>
 </ul>
 
-<p>Finding a research problem to work on is considered as part of this thesis subject. Students
-should come with a concrete and well-defined thesis topic. Proposals will be reviewed and
-discussed with the student before their approval (if any).  [<a href="/msc-thesis/msc-2023-dl.pdf">PDF</a>]</p>
-
-<p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>.</p>
+<p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>, <a href="mailto:Norman.MARLIER@nrb.be">Norman Marlier</a></p>
 
 <h2 id="deep-learning-and-computer-vision-at-evs">Deep learning and Computer vision at EVS</h2>
 
