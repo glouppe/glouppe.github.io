@@ -96,7 +96,7 @@ Powered by Hydejack v9.1.5 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2025-04-15T13:35:57+02:00',
+    INDEX_KEY: 'index--2025-04-15T13:45:47+02:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -197,7 +197,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 
 <p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a></p>
 
-<h2 id="appa-latent-diffusion-models-for-global-weather-modeling">Appa: Latent diffusion models for global weather modeling</h2>
+<h2 id="appa-a-latent-diffusion-model-for-global-weather-modeling">Appa: a latent diffusion model for global weather modeling</h2>
 
 <p>Appa is a 1.5B-parameter large weather model developed by our research group for global weather modeling. It builds on score-based data assimilation and latent diffusion models to produce global atmospheric trajectories at 0.25-degree resolution and 1-hour intervals. Several MSc thesis topics are available around Appa, including (one or several of the following):</p>
 <ul>
@@ -211,27 +211,13 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 
 <p><img src="/msc-thesis/msc-2025-appa.png" alt="" /></p>
 
-<h2 id="flow-cytometry-data-analysis-with-deep-learning">Flow cytometry data analysis with deep learning</h2>
+<h2 id="single-cell-rna-data-analysis-with-deep-learning">Single-cell RNA data analysis with deep learning</h2>
 
-<p>Multi-parametric flow cytometry (MFC) is a laboratory technique used to analyze the physical and chemical features of cells. More specifically, flow cytometry data is used to identify and characterize cell populations based on their surface markers and other properties. The analysis of flow cytometry data is complex and requires the use of advanced statistical and machine learning methods. It is widely used in clinical and research settings to study the immune system, cancer, and other diseases.</p>
+<p>Single-cell RNA sequencing (scRNA-seq) is a technology used to measure gene expression at the individual cell level, providing unprecedented resolution for understanding cellular heterogeneity and identifying rare cell populations. Unlike bulk sequencing, scRNA-seq reveals transcriptomic profiles of each cell, but presents significant computational challenges due to its high dimensionality, sparsity, technical noise, and batch effects that can confound biological signals.</p>
 
-<p>The first step in MFC consists in mixing cells from a biological sample (e.g., blood) with fluorescently labeled antibodies. The cells are then passed through a laser beam, and the emitted light is collected by detectors. The result is a high-dimensional dataset, where each cell is represented by a vector of measurements, corresponding to the intensity of the emitted light for each of the fluorescent markers. Technological advances have led to an increase in the number of markers that can be measured simultaneously (up to 40 or more) and in the number of cells that can be analyzed (up to millions). This has led to a need for new methods to analyze and interpret the data.</p>
-
-<p>In this project, we will explore unsupervised deep learning approaches to analyze and cluster flow cytometry data. We will investigate deep generative models to learn the underlying structure of the data and to identify subpopulations of cells in control and disease samples, as well as their evolution over time.</p>
+<p>In this project, we will explore deep learning approaches to analyze and interpret scRNA-seq data in the context of immunology and cancer research. We will focus on unsupervised representation learning using generative models  for dimensionality reduction, cell clustering, and trajectory inference. We will pay particular attention to developing and comparing methods for batch effect correction while preserving biological variation. The project will involve implementing state-of-the-art deep learning approaches and evaluating their performance on public and new scRNA-seq datasets.</p>
 
 <p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>, <a href="mailto:adrien.devoeght@chuliege.be">Adrien De Voeght</a>, <a href="mailto:f.baron@uliege.be">Frédéric Baron</a>.</p>
-
-<p><img src="/msc-thesis/msc-2024-cytometry.jpg" alt="" /></p>
-
-<h2 id="batch-effect-correction-in-single-cell-rna-sequencing-data-with-deep-learning">Batch effect correction in single-cell RNA sequencing data with deep learning</h2>
-
-<p>Single-cell RNA sequencing is a technology used to measure the expression of genes in individual cells. It is used to study the heterogeneity of cell populations and to identify new cell types. RNA sequencing data is high-dimensional and noisy, and often affected by technical artifacts, such as batch effects, which can confound the biological signal. Batch effects are systematic differences in the measurements of different batches of samples, which can arise from differences in the experimental protocol, reagents, or equipment. Batch effects can lead to spurious associations and can reduce the statistical power of the analysis.</p>
-
-<p>In this project, we will explore machine learning and deep learning approaches to correct batch effects in single-cell RNA sequencing data. We will investigate <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1850-9">batch effect correction methods</a> based on deep learning, such as adversarial training or denoising autoencoders to learn batch-invariant representations of the data, and compare them to traditional methods.</p>
-
-<p>Contact: <a href="mailto:g.louppe@uliege.be">Gilles Louppe</a>, <a href="mailto:adrien.devoeght@chuliege.be">Adrien De Voeght</a>, <a href="mailto:f.baron@uliege.be">Frédéric Baron</a>.</p>
-
-<p><img src="/msc-thesis/msc-2024-batch.png" alt="" /></p>
 
 <h2 id="large-language-models-at-nrb">Large language models at NRB</h2>
 
