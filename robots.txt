@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://glouppe.github.io/al-folio/sitemap.xml
+Sitemap: https://glouppe.github.io/sitemap.xml
