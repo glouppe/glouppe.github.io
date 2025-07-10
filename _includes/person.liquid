@@ -1,0 +1,21 @@
+<div class="person">
+    <img class="person-image" src="{{ include.image | relative_url }}" alt="{{ include.name }}" />
+    <div class="person-name">{{ include.name }}{% if include.url %} <a href="{{ include.url | relative_url }}">:house:</a>{% endif %}</div>
+    {% if include.alumni %}
+        <div class="person-title">{{ include.title }}{% if include.time %} ({{ include.time }}){% endif %}</div>
+    {% else %}
+        <div class="person-title">{{ include.title }}{% if include.time %} (since {{ include.time }}){% endif %}</div>
+    {% endif %}
+    {% if include.topics_ai %}
+    <div class="person-topics">
+        {% assign topics_ai = include.topics_ai | split: ', ' %}
+        {% for topic in topics_ai %}
+            <span class="badge badge-ai">{{ topic }}</span>
+        {% endfor %}
+        {% assign topics_science = include.topics_science | split: ', ' %}
+        {% for topic in topics_science %}
+            <span class="badge badge-science">{{ topic }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
