@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-I have been awarded an ARC (Actions de Recherche Concertées) grant on AI for regional climate models with Xavier Fettweis. A PhD/postdoc position is now available on this topic. [Apply now](mailto:g.louppe@uliege.be).
+I have been awarded an ARC (Actions de Recherche Concertées) grant for MAI.ai, a joint project with Xavier Fettweis for building an AI emulator of the MAR regional climate model. [Apply now](mailto:g.louppe@uliege.be).
 

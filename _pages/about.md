@@ -26,9 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! My name is Gilles Louppe. I am a computer scientist and researcher specializing in artificial intelligence for science. I am currently appointed as a Professor at the [University of Liège](http://www.uliege.be/), Belgium.
+Hi there! My name is Gilles Louppe. I am a computer scientist and researcher specializing in **artificial intelligence for science**. I am currently appointed as a Professor at the [University of Liège](http://www.uliege.be/), Belgium.
 
-My research efforts are focused on the development of deep learning models and methods for scientific applications, with a strong emphasis on (Bayesian) inverse problems in the physical sciences. I am the group leader of the Science with AI Lab (SAIL) at the [Montefiore Institute](https://www.montefiore.ulg.ac.be/), where we work on a variety of projects across sciences, including particle physics, astronomy, and weather science. Check out the [SAIL](./sail/) group page for more information about the team and our work.
+My research efforts are focused on the development of deep learning models and methods for scientific applications, with a strong emphasis on (Bayesian) **inverse problems** in the physical sciences. I am the group leader of the Science with AI Lab (SAIL) at the [Montefiore Institute](https://www.montefiore.ulg.ac.be/), where we work on a variety of projects across sciences, including particle physics, astronomy, and weather science. Check out the [SAIL](./sail/) group page for more information about the team and our work.
 
 [Academic CV](./assets/pdf/louppe-cv.pdf) (last modified: October 2024).
-
