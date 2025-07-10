@@ -241,6 +241,73 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.person {
+  display: inline-block;
+  text-align: center;
+  width: 260px;
+  margin: 1rem;
+  vertical-align: top;
+
+  .person-name {
+    font-weight: 400;
+    color: var(--global-text-color);
+  }
+
+  .person-title {
+    color: var(--global-text-color);
+  }
+
+  .person-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Badges
+
+.badge-ai {
+  background-color: var(--global-theme-color);
+  color: var(--global-card-bg-color) !important;
+}
+
+.badge-science {
+  background-color: var(--global-tip-block);
+  color: var(--global-card-bg-color) !important;
+}
+
+.badge-preprint {
+  background-color: var(--global-warning-block);
+  color: var(--global-card-bg-color) !important;
+}
+
+.badge-conference {
+  background-color: var(--global-danger-block);
+  color: var(--global-card-bg-color) !important;
+}
+
+.badge-workshop {
+  background-color: var(--global-theme-color);
+  color: var(--global-card-bg-color) !important;
+}
+
+.badge-journal {
+  background-color: var(--global-tip-block);
+  color: var(--global-card-bg-color) !important;
+}
+
+.badge-misc {
+  background-color: gray;
+  color: var(--global-card-bg-color) !important;
+}
+
+
+.author-me {
+  border-bottom: 1px dashed var(--global-theme-color);
+}
+
 // Navbar customization
 
 .navbar {
@@ -401,7 +468,7 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.5rem;
 
     a {
       img {
@@ -930,6 +997,10 @@ html.transition *:after {
       }
     }
   }
+
+  h2 {
+    margin-top: 1.5rem;
+  }
 }
 
 progress {
@@ -1415,5 +1486,12 @@ figure.cover {
   /* mouse over link */
   a.cover-link:hover {
     color: #23212d !important;
+  }
+}
+
+article {
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
