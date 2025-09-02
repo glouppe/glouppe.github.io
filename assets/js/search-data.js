@@ -465,8 +465,8 @@ ninja.data = [{
           section: "News",},{id: "news-congratulations-to-malavika-for-defending-her-phd-thesis-exoplanet-atmospheric-characterization-using-amortized-simulation-based-inference-partly-sunny",
           title: 'Congratulations to Malavika for defending her PhD thesis Exoplanet atmospheric characterization using amortized...',
           description: "",
-          section: "News",},{id: "news-welcome-to-fanny-joining-the-team-as-a-phd-student",
-          title: 'Welcome to Fanny, joining the team as a PhD student.',
+          section: "News",},{id: "news-welcome-to-fanny-bodart-joining-the-team-as-a-phd-student",
+          title: 'Welcome to Fanny Bodart, joining the team as a PhD student.',
           description: "",
           section: "News",},{
         id: 'social-bluesky',
