@@ -468,6 +468,9 @@ ninja.data = [{
           section: "News",},{id: "news-welcome-to-fanny-bodart-joining-the-team-as-a-phd-student",
           title: 'Welcome to Fanny Bodart, joining the team as a PhD student.',
           description: "",
+          section: "News",},{id: "news-welcome-to-thomas-savary-yakup-emre-şahin-and-sacha-peters-joining-us-as-phd-students-we-are-excited-to-have-you-on-board-positions-advertised-below-are-now-all-filled",
+          title: 'Welcome to Thomas Savary, Yakup Emre Şahin and Sacha Peters, joining us as...',
+          description: "",
           section: "News",},{
         id: 'social-bluesky',
         title: 'Bluesky',
