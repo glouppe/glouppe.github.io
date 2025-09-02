@@ -13,6 +13,16 @@ Legend: <span class="badge badge-preprint">pre-print</span> <span class="badge b
 
 ## 2025
 
+**Turbulent injection assisted by diffusion models for scale-resolving simulations** 
+[:page_facing_up:](https://doi.org/10.1063/5.0278541)<br>
+Margaux Boxho, Joachim Dominique, T Benamara, Michel Rasquin, Lionel Salesses, Caroline Sainvitu, <span class="author-me">Gilles Louppe</span>, Thomas Toulorge.<br>
+<span class="badge badge-journal">Physics of Fluids</span>
+
+**Panchromatic characterization of the Y0 brown dwarf WISEP J173835.52+273258.9 using JWST/MIRI** 
+[:page_facing_up:](https://arxiv.org/abs/2507.12264)<br>
+Malavika Vasist, Paul Mollière, Helena Kühnle, Olivier Absil, <span class="author-me">Gilles Louppe</span>, Rens Waters, Manuel Güdel, Thomas Henning, David Barrado, Leen Decin, John Pye, Pascal Tremblin.<br>
+<span class="badge badge-preprint">pre-print</span>
+
 **Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation** 
 [:page_facing_up:](https://arxiv.org/abs/2507.02608) [:computer:](https://github.com/PolymathicAI/lola)<br>
 François Rozet, Ruben Ohana, Michael McCabe, <span class="author-me">Gilles Louppe</span>, François Lanusse, Shirley Ho.<br>
