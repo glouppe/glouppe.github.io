@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Welcome to Fanny, joining the team as a PhD student.
+Welcome to Fanny Bodart, joining the team as a PhD student.

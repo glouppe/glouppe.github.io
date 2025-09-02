@@ -85,7 +85,7 @@ The Science with AI Lab (SAIL) is a research group hosted at the [Montefiore Ins
   name="Elise Faulx"
   title="PhD student"
   time="2025"
-  topics_ai="neural emulators, data assimilation"
+  topics_ai="neural emulators, regional climate models"
   topics_science="weather, climate"
   image="./assets/img/faces/elise.jpg"
 %}
@@ -101,11 +101,29 @@ The Science with AI Lab (SAIL) is a research group hosted at the [Montefiore Ins
 
 {% include person.liquid
   name="Thomas Savary"
-  title="Intern"
+  title="PhD student"
   time="2025"
   topics_ai="diffusion models, filtering"
   topics_science="weather"
   image="./assets/img/faces/thomas.jpg"
+%}
+
+{% include person.liquid
+  name="Sacha Peters"
+  title="PhD student"
+  time="2025"
+  topics_ai="neural emulators, data assimilation, regional climate models"
+  topics_science="weather"
+  image="./assets/img/faces/sacha-peters.jpg"
+%}
+
+{% include person.liquid
+  name="Yakup Emre Şahin"
+  title="PhD student"
+  time="2025"
+  topics_ai="foundation models, physics-informed deep learning"
+  topics_science=""
+  image="./assets/img/faces/yakup.jpg"
 %}
 
 
