@@ -37,5 +37,4 @@ My research efforts are focused on the development of **deep learning models and
 You can reach me by email (preferred, but not always fastest) or visit me at my office.
 
 - Mail: [g.louppe@uliege.be](mailto:g.louppe@uliege.be)
-- Office: B28/1.112 
-- Address: Montefiore Institute (B28), University of Liège, Allée de la Découverte 10, 4000 Liège, Belgium
+- Office: B28/1.112, Montefiore Institute, University of Liège
