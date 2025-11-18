@@ -6,7 +6,9 @@ nav: true
 nav_order: 1
 ---
 
-The Science with AI Lab (SAIL) is a research group hosted at the [Montefiore Institute](https://www.montefiore.uliege.be/) of the [University of Liège](http://www.uliege.be/), Belgium. We are a team of researchers working on the development of deep learning models and statistical methods for scientific applications, with a strong emphasis on (Bayesian) inverse problems in the physical sciences. Our research spans a variety of scientific domains, including particle physics, astronomy, neuroimaging, weather science and oceanography.
+The Science with AI Lab (SAIL) is a research group hosted at the [Montefiore Institute](https://www.montefiore.uliege.be/) of the [University of Liège](http://www.uliege.be/), Belgium. We are a team of researchers working on the development of deep generative models and probabilistic methods for scientific simulations and analysis. 
+
+Our main research areas include inverse problems, simulation-based inference, and neural emulation, spanning domains such as particle physics, astronomy, neuroimaging, weather science, and oceanography.
 
 ## Team members
 
