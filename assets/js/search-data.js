@@ -449,7 +449,7 @@ ninja.data = [{
           section: "News",},{id: "news-welcome-to-thomas-savary-yakup-emre-şahin-and-sacha-peters-joining-us-as-phd-students-we-are-excited-to-have-you-on-board-positions-advertised-below-are-now-all-filled",
           title: 'Welcome to Thomas Savary, Yakup Emre Şahin and Sacha Peters, joining us as...',
           description: "",
-          section: "News",},{id: "news-i-have-been-elected-as-member-of-the-collegium-of-the-royal-academy-of-sciences-of-belgium",
+          section: "News",},{id: "news-i-have-been-elected-as-member-of-the-collegium-of-the-royal-academy-of-science-letters-and-fine-arts-of-belgium",
           title: 'I have been elected as Member of the Collegium of the Royal Academy...',
           description: "",
           section: "News",},{
