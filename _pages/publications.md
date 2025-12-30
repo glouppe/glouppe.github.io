@@ -13,6 +13,26 @@ Legend: <span class="badge badge-preprint">pre-print</span> <span class="badge b
 
 ## 2025
 
+**Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation** 
+[:page_facing_up:](https://arxiv.org/abs/2507.02608) [:computer:](https://github.com/PolymathicAI/lola)<br>
+François Rozet, Ruben Ohana, Michael McCabe, <span class="author-me">Gilles Louppe</span>, François Lanusse, Shirley Ho.<br>
+<span class="badge badge-conference">NeurIPS 2025</span>
+
+**Appa: Bending weather dynamics with latent diffusion models for global data assimilation**
+[:page_facing_up:](https://arxiv.org/abs/2504.18720)<br>
+Gérôme Andry, François Rozet, Sacha Lewin, Omer Rochman, Victor Mangeleer, Matthias Pirlet, Elise Faulx, Marilaure Grégoire, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-workshop">ML4PS workshop, NeurIPS 2025</span>
+
+**Enforcing governing equation constraints in neural PDE solvers via training-free projections**
+[:page_facing_up:](https://arxiv.org/abs/2511.17258)<br>
+Omer Rochman, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-workshop">ML4PS workshop, NeurIPS 2025</span>
+
+**Training-Free Data Assimilation with GenCast**
+[:page_facing_up:](https://arxiv.org/abs/2509.18811)<br>
+Thomas Savary, François Rozet, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-workshop">CCAI workshop, NeurIPS 2025</span>
+
 **Turbulent injection assisted by diffusion models for scale-resolving simulations** 
 [:page_facing_up:](https://doi.org/10.1063/5.0278541)<br>
 Margaux Boxho, Joachim Dominique, T Benamara, Michel Rasquin, Lionel Salesses, Caroline Sainvitu, <span class="author-me">Gilles Louppe</span>, Thomas Toulorge.<br>
@@ -21,11 +41,6 @@ Margaux Boxho, Joachim Dominique, T Benamara, Michel Rasquin, Lionel Salesses, C
 **Panchromatic characterization of the Y0 brown dwarf WISEP J173835.52+273258.9 using JWST/MIRI** 
 [:page_facing_up:](https://arxiv.org/abs/2507.12264)<br>
 Malavika Vasist, Paul Mollière, Helena Kühnle, Olivier Absil, <span class="author-me">Gilles Louppe</span>, Rens Waters, Manuel Güdel, Thomas Henning, David Barrado, Leen Decin, John Pye, Pascal Tremblin.<br>
-<span class="badge badge-preprint">pre-print</span>
-
-**Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation** 
-[:page_facing_up:](https://arxiv.org/abs/2507.02608) [:computer:](https://github.com/PolymathicAI/lola)<br>
-François Rozet, Ruben Ohana, Michael McCabe, <span class="author-me">Gilles Louppe</span>, François Lanusse, Shirley Ho.<br>
 <span class="badge badge-preprint">pre-print</span>
 
 **Simulation-Based Inference Benchmark for Weak Lensing Cosmology**
@@ -42,11 +57,6 @@ The ATLAS collaboration.<br>
 [:page_facing_up:](https://doi.org/10.1088/1361-6633/adcd9a)<br>
 The ATLAS collaboration.<br>
 <span class="badge badge-journal">Reports on Progress in Physics</span>
-
-**Appa: Bending weather dynamics with latent diffusion models for global data assimilation**
-[:page_facing_up:](https://arxiv.org/abs/2504.18720)<br>
-Gérôme Andry, François Rozet, Sacha Lewin, Omer Rochman, Victor Mangeleer, Matthias Pirlet, Elise Faulx, Marilaure Grégoire, <span class="author-me">Gilles Louppe</span>.<br>
-<span class="badge badge-preprint">pre-print</span>
 
 **A Neural Material Point Method for Particle-based Simulations**
 [:page_facing_up:](https://arxiv.org/abs/2408.15753)  [:computer:](https://neuralmpm.isach.be/)<br>
