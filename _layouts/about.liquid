@@ -48,6 +48,19 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Bluesky -->
+    {% if page.bluesky and page.bluesky.enabled %}
+      <h2>bluesky</h2>
+      <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
+      <bsky-embed
+        username="{{ page.bluesky.username | default: site.bluesky_username }}"
+        limit="{{ page.bluesky.limit | default: 5 }}"
+        link-target="_blank"
+        {% if page.bluesky.disable_images %}disable-images="true"{% endif %}
+        {% if page.bluesky.disable_videos %}disable-videos="true"{% endif %}
+      ></bsky-embed>
+    {% endif %}
+
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
