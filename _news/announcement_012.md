@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I have been elected as Member of the Collegium of the Royal Academy of Sciences of Belgium.
+I have been elected as Member of the Collegium of the Royal Academy of Science, Letters and Fine Arts of Belgium.
