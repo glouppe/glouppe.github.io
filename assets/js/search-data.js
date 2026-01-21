@@ -452,6 +452,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-been-elected-as-member-of-the-collegium-of-the-royal-academy-of-science-letters-and-fine-arts-of-belgium",
           title: 'I have been elected as Member of the Collegium of the Royal Academy...',
           description: "",
+          section: "News",},{id: "news-congratulations-to-françois-for-defending-his-phd-thesis-generative-modeling-in-large-scale-dynamical-systems-enjoy-london-umbrella",
+          title: 'Congratulations to François for defending his PhD thesis Generative modeling in large-scale dynamical...',
+          description: "",
           section: "News",},{
         id: 'social-bluesky',
         title: 'Bluesky',
