@@ -19,15 +19,6 @@ Our main research areas include inverse problems, simulation-based inference, an
 %}
 
 {% include person.liquid
-  name="François Rozet"
-  title="PhD student"
-  time="2021"
-  topics_ai="diffusion models, inverse problems, data assimilation"
-  image="./assets/img/faces/francois.jpg"
-  url="https://francois-rozet.github.io/"
-%}
-
-{% include person.liquid
   name="Omer Rochman"
   title="PhD student"
   time="2021"
@@ -130,6 +121,15 @@ Our main research areas include inverse problems, simulation-based inference, an
 
 
 ## Alumni
+
+{% include person.liquid
+  name="François Rozet"
+  title="PhD student"
+  time="2021-2025"
+  topics_ai="diffusion models, inverse problems, data assimilation"
+  image="./assets/img/faces/francois.jpg"
+  url="https://francois-rozet.github.io/"
+%}
 
 {% include person.liquid
   name="Malavika Vasist"
