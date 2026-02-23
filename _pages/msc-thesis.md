@@ -6,84 +6,102 @@ nav: true
 nav_order: 5
 ---
 
-A list of MSc thesis topics for 2025-2026 is proposed below. The topics are generally available for students with a background in deep learning, regardless of their specific field of study. The list is non-exhaustive, feel free to come and discuss with me.
+MSc thesis topics for 2026-2027 are proposed below. The topics are generally available for students with a background in deep learning, regardless of their specific field of study. The list is non-exhaustive, feel free to come and discuss with me.
+
+## ① Scaling latent diffusion models for weather forecasting
+
+Recent work has shown that simple, scalable latent diffusion frameworks can achieve state-of-the-art probabilistic weather forecasting without the need for domain-specific architectural constraints or specialized training recipes. In particular, the ATLAS framework ([Kossaifi et al., 2026](https://arxiv.org/abs/2601.18111)) demonstrates that a standard transformer operating in a compressed latent space, combined with a history-conditioned local projector, can outperform both the IFS ensemble and GenCast across most variables.
+
+In this project, we will study the lessons from ATLAS and related work to inform the design of a next version of Appa, our 1.5B-parameter latent diffusion model for global weather modeling. This includes investigating the impact of latent space design choices (direct downsampling vs. variational encoding), backbone architecture (transformer vs. U-Net), probabilistic estimator (diffusion, stochastic interpolants, CRPS-based training), and conditioning strategies on forecast skill and computational efficiency.
+
+![](../assets/msc-thesis/msc-2026-topic1_atlas_architecture.png)
+    
+**References:**
+- Kossaifi et al., 2026, [ATLAS: A Scalable Framework for Probabilistic Weather Forecasting](https://arxiv.org/abs/2601.18111)
+- Rozet et al., 2025, [Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation](https://arxiv.org/abs/2507.02608)
+- Andry et al., 2025, [Appa: Bending Weather Dynamics with Latent Diffusion Models for Global Data Assimilation](https://appa.montefiore.uliege.be)
+- Price et al., 2023, [GenCast: Diffusion-based ensemble forecasting for medium-range weather](https://arxiv.org/abs/2312.15796)
+
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Gérôme Andry](mailto:gandry@uliege.be).
 
 
-## AI for Science
+## ② Generative models of sequences of arbitrary lengths
 
-Our research group focuses its efforts around the development and application of deep learning methods for scientific applications. MSc thesis topics are available in the following areas:
+Score-based data assimilation (SDA) enables non-autoregressive generation of state trajectories by decomposing the score of long sequences into scores over short overlapping segments, using a Markov blanket mechanism. While effective, recent findings in our group indicate that information propagates very slowly across blanket boundaries during the denoising process, limiting the model's ability to capture long-range temporal dependencies and to generalize to sequences of arbitrary lengths.
 
-- Deep generative models for scientific data
-- Inverse problems and simulation-based inference
-- Deep learning for weather and climate science (emulation, data assimilation, forecasting, downscaling, etc.)
-- Deep learning for oceanography 
+In this project, we will investigate alternative generative modeling approaches that can natively handle sequences of variable and arbitrary lengths. This includes exploring architectural designs (e.g., continuous-time models, flexible attention mechanisms, or recurrent diffusion schemes) that avoid fixed-length decompositions, and evaluating their impact on trajectory quality and coherence. The project will build on the SDA framework ([Rozet & Louppe, 2023](https://arxiv.org/abs/2306.10574)) and related work on conditional diffusion models for PDE simulations ([Shysheya et al., 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/2974844555dc383ea16c5f35833c7a57-Abstract-Conference.html)), and evaluate improvements in the context of weather data assimilation.
 
-Specific topics should be discussed depending on the student's interests and background. 
+![](../assets/msc-thesis/msc-2024-sda.png)
 
-Contact: [Gilles Louppe](mailto:g.louppe@uliege.be)
+**References:**
+- Rozet & Louppe, 2023, [Score-based Data Assimilation](https://arxiv.org/abs/2306.10574)
+- Shysheya et al., 2024, [Conditional Diffusion Models for PDE Simulations](https://proceedings.neurips.cc/paper_files/paper/2024/hash/2974844555dc383ea16c5f35833c7a57-Abstract-Conference.html)
+- Morel et al, 2025, [Predicting partially observable dynamical systems via diffusion models with a multiscale inference scheme](https://arxiv.org/pdf/2511.19390)
 
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Gérôme Andry](mailto:gandry@uliege.be).
 
-## Appa: a latent diffusion model for global weather modeling
+## ③ Latent diffusion models for ocean emulation
 
-Appa is a 1.5B-parameter large weather model developed by our research group for global weather modeling. It builds on score-based data assimilation and latent diffusion models to produce global atmospheric trajectories at 0.25-degree resolution and 1-hour intervals. Several MSc thesis topics are available around Appa, including (one or several of the following):
-- Exploring and improving its autoencoder architecture
-- Exploring and improving its diffusion model architecture
-- Fine-tuning on real-world data
-- Assessing its physical consistency
+Numerical ocean models simulate complex biogeochemical and physical processes but are computationally expensive. In our group, we have been developing deep learning emulators for the Black Sea based on diffusion models operating directly in pixel space, with promising initial results.
 
-Contact: [Gilles Louppe](mailto:g.louppe@uliege.be)
+In this project, we will explore whether latent diffusion models (LDMs) can improve upon this approach. By first learning a compressed latent representation of the ocean state through an autoencoder, and then training a diffusion model in this latent space, we expect to achieve higher quality emulations at reduced computational cost. The project will involve designing and training the autoencoder and latent diffusion components, and comparing the results against our existing pixel-space diffusion baseline.
 
-![](../assets/msc-thesis/msc-2025-appa.png)
+![](../assets/msc-thesis/msc-2026-ocean.png)
 
+**References:**
+- Rozet et al., 2025, [Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation](https://arxiv.org/abs/2507.02608)
 
-## Flow cytometry data analysis with deep learning
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Victor Mangeleer](mailto:vmangeleer@uliege.be).
 
-Multi-parametric flow cytometry (MFC) is a laboratory technique used to analyze the physical and chemical features of cells. More specifically, flow cytometry data is used to identify and characterize cell populations based on their surface markers and other properties. The analysis of flow cytometry data is complex and requires the use of advanced statistical and machine learning methods. It is widely used in clinical and research settings to study the immune system, cancer, and other diseases.
+## ④ Web demonstrators and MLOps for large weather models
 
-The first step in MFC consists in mixing cells from a biological sample (e.g., blood) with fluorescently labeled antibodies. The cells are then passed through a laser beam, and the emitted light is collected by detectors. The result is a high-dimensional dataset, where each cell is represented by a vector of measurements, corresponding to the intensity of the emitted light for each of the fluorescent markers. Technological advances have led to an increase in the number of markers that can be measured simultaneously (up to 40 or more) and in the number of cells that can be analyzed (up to millions). This has led to a need for new methods to analyze and interpret the data.
+Our research group develops large weather models, including [Appa](https://appa.montefiore.uliege.be) for global weather modeling and MAR.ai for regional climate modeling over Belgium. These models produce massive amounts of high-dimensional spatio-temporal data (global fields at 0.25° resolution, hourly time steps, multiple atmospheric variables and pressure levels) that need to be served efficiently and visualized interactively. Bridging the gap between research prototypes and production-grade deployment is a substantial engineering challenge that involves distributed inference, data pipelines at scale, and real-time web visualization of geospatial data.
 
-In this project, we will explore unsupervised deep learning approaches to analyze and cluster flow cytometry data. We will investigate deep generative models to learn the underlying structure of the data and to identify subpopulations of cells in control and disease samples, as well as their evolution over time.
+In this project, we will design and build the full deployment and visualization stack for these models. On the MLOps side, this includes model serving infrastructure, automated inference scheduling, data processing pipelines, and monitoring. On the frontend side, this includes building interactive web demonstrators capable of rendering large weather fields in real time, with features such as ensemble uncertainty visualization, point forecasts, and comparison against observations. The project will require tackling challenges in efficient data tiling and streaming, GPU-accelerated rendering, and scalable backend architecture. The exact scope will be defined depending on the student's interests and skills.
 
-Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be), [Frédéric Baron](mailto:f.baron@uliege.be).
+![](../assets/msc-thesis/msc-2026-appa-live.png)
 
-![](../assets/msc-thesis/msc-2024-cytometry.jpg)
+**References:**
+- Andry et al., 2025, [Appa: Bending Weather Dynamics with Latent Diffusion Models for Global Data Assimilation](https://appa.montefiore.uliege.be)
 
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be).
 
-## Single-cell RNA data analysis with deep learning
+## ⑤ Deep Sets for classification of flow cytometry data
 
-Single-cell RNA sequencing (scRNA-seq) is a technology used to measure gene expression at the individual cell level, providing unprecedented resolution for understanding cellular heterogeneity and identifying rare cell populations. Unlike bulk sequencing, scRNA-seq reveals transcriptomic profiles of each cell, but presents significant computational challenges due to its high dimensionality, sparsity, technical noise, and batch effects that can confound biological signals.
+Multi-parametric flow cytometry (MFC) is a laboratory technique used to analyze the physical and chemical features of cells by passing them through a laser beam and measuring the emitted fluorescent signals. It is widely used in clinical and research settings to study the immune system, cancer, and other diseases. Recent work in our group (MARVIN) has explored deep learning approaches for analyzing and representing flow cytometry data.
 
-In this project, we will explore deep learning approaches to analyze and interpret scRNA-seq data in the context of immunology and cancer research. We will focus on unsupervised representation learning using generative models  for dimensionality reduction, cell clustering, and trajectory inference. We will pay particular attention to developing and comparing methods for batch effect correction while preserving biological variation. The project will involve implementing state-of-the-art deep learning approaches and evaluating their performance on public and new scRNA-seq datasets.
+In this project, we will extend this line of work by exploring Deep Sets and related permutation-invariant architectures for the classification of flow cytometry samples. Key applications include the detection of minimal residual disease (MRD), where the goal is to identify rare residual cancer cells in patient samples after treatment, automated diagnosis from cytometry panels, and survival prediction. The project will involve designing and evaluating set-based neural network architectures that can operate directly on variable-size collections of cells and learn sample-level representations for clinical decision-making.
 
-Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be), [Frédéric Baron](mailto:f.baron@uliege.be).
+![](../assets/msc-thesis/msc-2026-marvin.png)
 
+**References:**
+- Zaheer et al., 2017, [Deep Sets](https://arxiv.org/abs/1703.06114)
+- Lee et al., 2019, [Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks](https://arxiv.org/abs/1810.00825)
 
-## Rewinding the prebiotic accretionary formation of ribosomes with diffusion models
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be).
 
-Ribosomes are the molecular machines that translate messenger RNA (mRNA) into proteins. They are composed of ribosomal RNA (rRNA) and proteins, and their assembly is a complex process that involves the folding of rRNA and the binding of ribosomal proteins. The assembly of ribosomes is thought to have evolved from simpler structures in early life forms, but the details of this process are still poorly understood. In this project, we will use diffusion models to study the assembly of ribosomes from their constituent parts. [<a href="../assets/msc-thesis/msc-2025-ribosome.pdf">PDF</a>].
+## ⑥ Automated karyotyping with deep learning
 
-Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [André Renard](mailto:andrejrenard@gmail.com).
+Karyotyping is the process of analyzing an individual's chromosomes from microscopy images. It involves segmenting, classifying, and pairing chromosomes to produce the chromosome formula (karyotype), which is essential for diagnosing genetic disorders such as trisomies, translocations, and other chromosomal abnormalities. Currently, this process is largely manual and time-consuming for cytogeneticists.
 
-![](../assets/msc-thesis/msc-2025-ribosome.png)
+In this project, we will develop a deep learning pipeline for automated karyotyping. The pipeline will combine instance segmentation to detect and isolate individual chromosomes from metaphase spread images, followed by classification to identify each chromosome by type and produce the final karyotype formula. The project will explore modern computer vision architectures and evaluate their performance on clinical cytogenetic data.
 
+![](../assets/msc-thesis/msc-2026-karyotyping.jpg)
 
-## Large language models at NRB
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be).
 
-In collaboration with NRB, two master thesis topics are proposed on large language models (LLMs). 
-- The first topic consists in assessing the robustness of LLMs to jailbreaking attacks. Jailbreaking is a technique used to bypass the restrictions of LLMs and to make them generate harmful or inappropriate content. The goal of this project is to develop and evaluate jailbreaking techniques for LLMs, and to develop countermeasures to mitigate these attacks. 
-- The second topic consists in exploring how system prompts should be refined to guarantee constraints specific to the application domain. Multi-agent refinement strategies will be explored to ensure that the system prompts are aligned with the application domain and that the generated content is relevant and appropriate.
+## ⑦ Monitoring and analyzing the energy consumption of a GPU cluster
 
-Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Norman Marlier](mailto:Norman.MARLIER@nrb.be)
+Our research group operates Alan, a GPU cluster with 15 compute nodes and approximately 95 GPUs, used for training and running deep learning models. As AI workloads grow in scale, understanding and optimizing the energy footprint of such infrastructure becomes increasingly important, both for sustainability and for cost management.
 
+In this project, we will design and implement a monitoring system to measure and record the electrical consumption of the cluster at multiple levels (per-GPU, per-node, per-job). Building on this data, we will analyze consumption patterns across different workloads (training, inference, idle), identify inefficiencies, and explore strategies to reduce energy usage without impacting research productivity. The project will also include a literature review on the energy consumption of AI infrastructure, and a cross-analysis comparing our measurements with figures reported by other institutions and in the scientific literature. Finally, it may involve developing dashboards for real-time monitoring and benchmarking the energy cost of specific models and training runs.
 
-## Deep learning and Computer vision at EVS
+**References:**
+- Luccioni et al., 2024, [Power Hungry Processing: Watts Driving the Cost of AI Deployment?](https://arxiv.org/abs/2311.16863)
+- Patterson et al., 2021, [Carbon Emissions and Large Neural Network Training](https://arxiv.org/abs/2104.10350)
+- CodeCarbon, [Track and reduce CO2 emissions from compute](https://codecarbon.io/)
 
-In collaboration with EVS Broadcast Equipment, several master thesis topics are proposed on deep learning for sport videos. Topics include novel view synthesis, multi-modal models, or generative models, among others. The exhaustive list of projects is available in the document below. [<a href="../assets/msc-thesis/msc-2025-evs.pdf">PDF</a>].
-
-Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Vincent Botta](mailto:v.botta@evs.com), [Valentine Liesse](mailto:v.liesse@evs.com).
-
-![](../assets/msc-thesis/msc-2025-evs.png)
-
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be).
 
 ---
 
