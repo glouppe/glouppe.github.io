@@ -455,6 +455,9 @@ ninja.data = [{
           section: "News",},{id: "news-congratulations-to-françois-for-defending-his-phd-thesis-generative-modeling-in-large-scale-dynamical-systems-enjoy-london-umbrella",
           title: 'Congratulations to François for defending his PhD thesis Generative modeling in large-scale dynamical...',
           description: "",
+          section: "News",},{id: "news-msc-thesis-topics-for-2026-2027-are-now-available-on-the-msc-thesis-page-topics-are-tentative-and-subject-to-change-so-feel-free-to-come-and-discuss-with-me-if-you-are-interested-in-any-of-them-or-if-you-have-other-ideas",
+          title: 'MSc thesis topics for 2026-2027 are now available on the MSc thesis page....',
+          description: "",
           section: "News",},{
         id: 'social-bluesky',
         title: 'Bluesky',
