@@ -31,7 +31,7 @@ Score-based data assimilation (SDA) enables non-autoregressive generation of sta
 
 In this project, we will investigate alternative generative modeling approaches that can natively handle sequences of variable and arbitrary lengths. This includes exploring architectural designs (e.g., continuous-time models, flexible attention mechanisms, or recurrent diffusion schemes) that avoid fixed-length decompositions, and evaluating their impact on trajectory quality and coherence. The project will build on the SDA framework ([Rozet & Louppe, 2023](https://arxiv.org/abs/2306.10574)) and related work on conditional diffusion models for PDE simulations ([Shysheya et al., 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/2974844555dc383ea16c5f35833c7a57-Abstract-Conference.html)), and evaluate improvements in the context of weather data assimilation.
 
-![](../assets/msc-thesis/msc-2024-sda.png)
+<center><img src="../assets/msc-thesis/msc-2024-sda.png" alt="Score-based data assimilation" width="80%"></center>
 
 **References:**
 - Rozet & Louppe, 2023, [Score-based Data Assimilation](https://arxiv.org/abs/2306.10574)
@@ -51,9 +51,39 @@ In this project, we will explore whether latent diffusion models (LDMs) can impr
 **References:**
 - Rozet et al., 2025, [Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation](https://arxiv.org/abs/2507.02608)
 
-Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Victor Mangeleer](mailto:vmangeleer@uliege.be).
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Victor Mangeleer](mailto:vmangeleer@uliege.be), [Marilaure Grégoire](mailto:mgregoire@uliege.be).
 
-## ④ Web demonstrators and MLOps for large weather models
+
+## ④ Quantifying Information Requirements for Biogeochemical Field Reconstruction in the Black Sea
+
+Measurements along the water column are one one of our main source of observations for the
+biogeochemistry of the ocean. However, sensors and ship campaigns through which these data
+are collected are expensive, causing the ocean observations to be very sparse in time and space.
+Machine learning methods can help reconstruct ocean fields from incomplete measurements, 
+but their performance strongly depends on the amount and distribution of available information.
+The goal of the thesis is to study how the reconstruction error increases when the available information
+decreases both in time and in space, and what is the minimal amount of information that allow to 
+preserve some desired properties (e.g. seasonal mean and variability in coastal and open sea areas). 
+In particular, we plan to start from a biogeochemical reanalysis of a regional sea (the Black Sea), 
+which we will consider as our ground truth. Sparse observational scenarios will be simulated by 
+subsampling the reanalysis in space and time, and we will use data-driven methods to recover the full
+fields from these sparse observations.
+The motivation of this work is two folds: on the one hand, knowing when and where data should be 
+collected in order for some properties to be preserved may give indications to minimize the effort 
+in expensive ship camapaigns; on the other hand, given a set of data that has already been collected, 
+we can estimate how accurately we are able to reconstruct biogeochemical fields and how much the 
+properties of our interest are preserved.
+
+<center><img src="../assets/msc-thesis/msc-2026-federica.png" alt="Federica Adobbati" width="60%"></center>
+
+**References:**
+- Garcia-Espriu et al., 2025, [On the global reconstruction of ocean interior variables: a feasibility data-driven study with simulated surface and water column observations](https://doi.org/10.5194/os-21-2579-2025)
+- Nagata et al., 2021, [Data-driven sparse sensor selection based on A-optimal design of experiment with ADMM](https://doi.org/10.1109/JSEN.2021.3073978)
+
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Federica Adobbati](mailto:fadobbati@uliege.be), [Marilaure Grégoire](mailto:mgregoire@uliege.be).
+
+
+## ⑤ Web demonstrators and MLOps for large weather models
 
 Our research group develops large weather models, including [Appa](https://appa.montefiore.uliege.be) for global weather modeling and MAR.ai for regional climate modeling over Belgium. These models produce massive amounts of high-dimensional spatio-temporal data (global fields at 0.25° resolution, hourly time steps, multiple atmospheric variables and pressure levels) that need to be served efficiently and visualized interactively. Bridging the gap between research prototypes and production-grade deployment is a substantial engineering challenge that involves distributed inference, data pipelines at scale, and real-time web visualization of geospatial data.
 
@@ -66,7 +96,7 @@ In this project, we will design and build the full deployment and visualization 
 
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be).
 
-## ⑤ Deep Sets for classification of flow cytometry data
+## ⑥ Deep Sets for classification of flow cytometry data
 
 Multi-parametric flow cytometry (MFC) is a laboratory technique used to analyze the physical and chemical features of cells by passing them through a laser beam and measuring the emitted fluorescent signals. It is widely used in clinical and research settings to study the immune system, cancer, and other diseases. Recent work in our group (MARVIN) has explored deep learning approaches for analyzing and representing flow cytometry data.
 
@@ -80,7 +110,7 @@ In this project, we will extend this line of work by exploring Deep Sets and rel
 
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be).
 
-## ⑥ Automated karyotyping with deep learning
+## ⑦ Automated karyotyping with deep learning
 
 Karyotyping is the process of analyzing an individual's chromosomes from microscopy images. It involves segmenting, classifying, and pairing chromosomes to produce the chromosome formula (karyotype), which is essential for diagnosing genetic disorders such as trisomies, translocations, and other chromosomal abnormalities. Currently, this process is largely manual and time-consuming for cytogeneticists.
 
@@ -90,7 +120,25 @@ In this project, we will develop a deep learning pipeline for automated karyotyp
 
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be).
 
-## ⑦ Monitoring and analyzing the energy consumption of a GPU cluster
+## ⑧ Towards Data-Efficient Machine Learning for Aerodynamic Modeling via Transfer Learning
+
+The objective of this work is to investigate strategies for reducing the amount of data required to train accurate deep
+learning models for aerodynamic prediction. Building on existing databases, models, and simulation workflows, the
+project aims to bridge the gap between traditional design-of-experiments datasets and modern foundation-model
+approaches in scientific machine learning (SciML) by leveraging transfer learning methods.
+
+This MSc thesis project is proposed in collaboration with [Cenaero](https://www.cenaero.be/), a leading research center in aerodynamics and computational fluid dynamics (CFD). The supervision will be shared between Joachim Dominique (Cenaero) and Gilles Louppe (ULiège). 
+
+![](../assets/msc-thesis/msc-2026-wing.png)
+
+**References:**
+- Full offer from Cenaero [PDF](../assets/msc-thesis/msc-2026-cenaero.pdf)
+- Yang et al., 2024, [SuperWing: a comprehensive transonic wing dataset for data-driven aerodynamic design](https://arxiv.org/abs/2512.14397)
+
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Joachim Dominique](mailto:joachim.dominique@cenaero.be) (Cenaero).
+
+
+## ⑨ Monitoring and analyzing the energy consumption of a GPU cluster
 
 Our research group operates Alan, a GPU cluster with 15 compute nodes and approximately 95 GPUs, used for training and running deep learning models. As AI workloads grow in scale, understanding and optimizing the energy footprint of such infrastructure becomes increasingly important, both for sustainability and for cost management.
 
