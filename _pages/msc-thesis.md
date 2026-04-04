@@ -96,6 +96,7 @@ In this project, we will design and build the full deployment and visualization 
 
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be).
 
+
 ## ⑥ Deep Sets for classification of flow cytometry data
 
 Multi-parametric flow cytometry (MFC) is a laboratory technique used to analyze the physical and chemical features of cells by passing them through a laser beam and measuring the emitted fluorescent signals. It is widely used in clinical and research settings to study the immune system, cancer, and other diseases. Recent work in our group (MARVIN) has explored deep learning approaches for analyzing and representing flow cytometry data.
@@ -110,6 +111,7 @@ In this project, we will extend this line of work by exploring Deep Sets and rel
 
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be).
 
+
 ## ⑦ Automated karyotyping with deep learning
 
 Karyotyping is the process of analyzing an individual's chromosomes from microscopy images. It involves segmenting, classifying, and pairing chromosomes to produce the chromosome formula (karyotype), which is essential for diagnosing genetic disorders such as trisomies, translocations, and other chromosomal abnormalities. Currently, this process is largely manual and time-consuming for cytogeneticists.
@@ -120,7 +122,21 @@ In this project, we will develop a deep learning pipeline for automated karyotyp
 
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be).
 
-## ⑧ Towards Data-Efficient Machine Learning for Aerodynamic Modeling via Transfer Learning
+
+## ⑧ Deep learning for predicting 2-year epileptic seizure recurrence from clinical EEGs
+
+Epilepsy is a common neurological disorder, affecting approximately 0.5–1% of the population, while around 5% of individuals will experience at least one seizure during their lifetime. After a first unprovoked seizure, the diagnosis relies on estimating the risk of recurrence. Inclinical practice, this risk is mainly assessed based on EEG and brain imaging results. However, this estimation remains imperfect, as routine (scalp) EEGs have limited sensitivity and as its interpretation is reader-dependent. A wrong estimation directly influences therapeutic decisions and can lead to a false diagnosis (∼25% of cases), with significant social and psychological consequences for the patient. Therefore, the aim is to develop a tool that helps clinicians make more accurate decisions while also providing insights to improve our understanding of EEGs and epilepsy.
+
+Given the limited size of the clinical dataset, the strategy is to fine-tune an existing foundation model, pre-trained on extensive EEG data. In this project, we will pre-process EEG signals, select and fine-tune EEG foundation models, compare model performance, evaluate predictive accuracy and explore explainable AI techniques if time allows.
+
+This work has a direct clinical application in neurology. Ultimately, it could contribute to a decision-support tool for better risk stratification after a first seizure, while also enhancing our scientific understanding of EEG patterns and epilepsy.
+
+![](../assets/msc-thesis/msc-2026-eeg.png)
+
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Kenza Lamborelle](mailto:Kenza.Lamborelle@student.uliege.be).
+
+
+## ⑨ Towards Data-Efficient Machine Learning for Aerodynamic Modeling via Transfer Learning
 
 The objective of this work is to investigate strategies for reducing the amount of data required to train accurate deep
 learning models for aerodynamic prediction. Building on existing databases, models, and simulation workflows, the
@@ -138,7 +154,7 @@ This MSc thesis project is proposed in collaboration with [Cenaero](https://www.
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Joachim Dominique](mailto:joachim.dominique@cenaero.be) (Cenaero).
 
 
-## ⑨ Monitoring and analyzing the energy consumption of a GPU cluster
+## ⑩ Monitoring and analyzing the energy consumption of a GPU cluster
 
 Our research group operates Alan, a GPU cluster with 15 compute nodes and approximately 95 GPUs, used for training and running deep learning models. As AI workloads grow in scale, understanding and optimizing the energy footprint of such infrastructure becomes increasingly important, both for sustainability and for cost management.
 
