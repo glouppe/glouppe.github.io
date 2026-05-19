@@ -458,6 +458,9 @@ ninja.data = [{
           section: "News",},{id: "news-msc-thesis-topics-for-2026-2027-are-now-available-on-the-msc-thesis-page-topics-are-tentative-and-subject-to-change-so-feel-free-to-come-and-discuss-with-me-if-you-are-interested-in-any-of-them-or-if-you-have-other-ideas",
           title: 'MSc thesis topics for 2026-2027 are now available on the MSc thesis page....',
           description: "",
+          section: "News",},{id: "news-new-msc-thesis-for-2026-2027-in-the-fields-of-astronomy-health-and-sports-broadcasting-are-now-available-check-out-the-details-and-contact-us-if-you-are-interested-in-any-of-the-topics",
+          title: 'New MSc thesis for 2026-2027 in the fields of astronomy, health, and sports...',
+          description: "",
           section: "News",},{
         id: 'social-bluesky',
         title: 'Bluesky',
