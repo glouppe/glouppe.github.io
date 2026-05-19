@@ -8,6 +8,26 @@ nav_order: 5
 
 MSc thesis topics for 2026-2027 are proposed below. The topics are generally available for students with a background in deep learning, regardless of their specific field of study. The list is non-exhaustive, feel free to come and discuss with me.
 
+Weather and climate modeling :cyclone:
+- [Scaling latent diffusion models for weather forecasting](#-scaling-latent-diffusion-models-for-weather-forecasting)
+- [Generative models of sequences of arbitrary lengths](#-generative-models-of-sequences-of-arbitrary-lengths)
+- [Latent diffusion models for ocean emulation](#-latent-diffusion-models-for-ocean-emulation)
+- [Quantifying Information Requirements for Biogeochemical Field Reconstruction in the Black Sea](#-quantifying-information-requirements-for-biogeochemical-field-reconstruction-in-the-black-sea)
+- [Web demonstrators and MLOps for large weather models](#-web-demonstrators-and-mlops-for-large-weather-models)
+
+Astronomy :telescope:
+- [Focal plane wavefront sensing for high-contrast imaging with transformers](#-focal-plane-wavefront-sensing-for-high-contrast-imaging-with-transformers)
+
+Health :syringe:
+- [Deep Sets for classification of flow cytometry data](#-deep-sets-for-classification-of-flow-cytometry-data)
+- [Automated karyotyping with deep learning](#-automated-karyotyping-with-deep-learning)
+- [Deep learning for predicting 2-year epileptic seizure recurrence from clinical EEGs](#-deep-learning-for-predicting-2-year-epileptic-seizure-recurrence-from-clinical-eegs)
+
+Industrial applications :soccer:
+- [Generative models for sports broadcasting (with EVS Broadcast Equipment)](#-generative-models-for-sports-broadcasting-with-evs-broadcast-equipment)
+- [~~Towards Data-Efficient Machine Learning for Aerodynamic Modeling via Transfer Learning (with Cenaero)~~](#-towards-data-efficient-machine-learning-for-aerodynamic-modeling-via-transfer-learning-with-cenaero)
+- [Monitoring and analyzing the energy consumption of a GPU cluster](#-monitoring-and-analyzing-the-energy-consumption-of-a-gpu-cluster)
+
 ## ① Scaling latent diffusion models for weather forecasting
 
 Recent work has shown that simple, scalable latent diffusion frameworks can achieve state-of-the-art probabilistic weather forecasting without the need for domain-specific architectural constraints or specialized training recipes. In particular, the ATLAS framework ([Kossaifi et al., 2026](https://arxiv.org/abs/2601.18111)) demonstrates that a standard transformer operating in a compressed latent space, combined with a history-conditioned local projector, can outperform both the IFS ensemble and GenCast across most variables.
@@ -97,7 +117,16 @@ In this project, we will design and build the full deployment and visualization 
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be).
 
 
-## ⑥ Deep Sets for classification of flow cytometry data
+## ⑥ Focal plane wavefront sensing for high-contrast imaging with transformers
+
+This project focuses on improving wavefront sensing for METIS, a first-generation instrument for the 39 m Extremely Large Telescope (first light 2030) aimed at directly imaging rocky and sub-Neptune exoplanets. The current approach encodes optical aberrations into scientific images via metal-cut masks and uses CNNs to solve the non-linear inversion problem, but CNNs struggle with the gap between simulated and real data and the variety of instrument configurations. The student will replace the CNNs with a transformer architecture inspired by DINGO-T1 (used in gravitational-wave parameter estimation), validate it in simulation against the CNN baseline, study its training robustness and adaptability across settings, and potentially test it on lab data. The work is jointly supervised by the PSILab group (STAR Institute) and SAIL (Montefiore Institute).
+
+![](../assets/msc-thesis/msc-2026-wfs.png)
+
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Olivier Absil](mailto:olivier.absil@uliege.be), [Gilles Orban de Xivry](mailto:gorban@uliege.be).
+
+
+## ⑦ Deep Sets for classification of flow cytometry data
 
 Multi-parametric flow cytometry (MFC) is a laboratory technique used to analyze the physical and chemical features of cells by passing them through a laser beam and measuring the emitted fluorescent signals. It is widely used in clinical and research settings to study the immune system, cancer, and other diseases. Recent work in our group (MARVIN) has explored deep learning approaches for analyzing and representing flow cytometry data.
 
@@ -112,7 +141,7 @@ In this project, we will extend this line of work by exploring Deep Sets and rel
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be).
 
 
-## ⑦ Automated karyotyping with deep learning
+## ⑧ Automated karyotyping with deep learning
 
 Karyotyping is the process of analyzing an individual's chromosomes from microscopy images. It involves segmenting, classifying, and pairing chromosomes to produce the chromosome formula (karyotype), which is essential for diagnosing genetic disorders such as trisomies, translocations, and other chromosomal abnormalities. Currently, this process is largely manual and time-consuming for cytogeneticists.
 
@@ -123,7 +152,7 @@ In this project, we will develop a deep learning pipeline for automated karyotyp
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Adrien De Voeght](mailto:adrien.devoeght@chuliege.be).
 
 
-## ⑧ Deep learning for predicting 2-year epileptic seizure recurrence from clinical EEGs
+## ⑨ Deep learning for predicting 2-year epileptic seizure recurrence from clinical EEGs
 
 Epilepsy is a common neurological disorder, affecting approximately 0.5–1% of the population, while around 5% of individuals will experience at least one seizure during their lifetime. After a first unprovoked seizure, the diagnosis relies on estimating the risk of recurrence. Inclinical practice, this risk is mainly assessed based on EEG and brain imaging results. However, this estimation remains imperfect, as routine (scalp) EEGs have limited sensitivity and as its interpretation is reader-dependent. A wrong estimation directly influences therapeutic decisions and can lead to a false diagnosis (∼25% of cases), with significant social and psychological consequences for the patient. Therefore, the aim is to develop a tool that helps clinicians make more accurate decisions while also providing insights to improve our understanding of EEGs and epilepsy.
 
@@ -136,7 +165,24 @@ This work has a direct clinical application in neurology. Ultimately, it could c
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Kenza Lamborelle](mailto:Kenza.Lamborelle@student.uliege.be).
 
 
-## ⑨ Towards Data-Efficient Machine Learning for Aerodynamic Modeling via Transfer Learning
+## ⑩ Generative models for sports broadcasting (with EVS Broadcast Equipment)
+
+Several MSc thesis topics are available in collaboration with [EVS Broadcast Equipment](https://www.evs.com/), a leading provider of live video technology for sports broadcasting. 
+
+![](../assets/msc-thesis/msc-2026-soccer.png)
+
+Details of the topics and the application procedure can be found in the full offer from EVS [[PDF](../assets/msc-thesis/msc-2026-evs.pdf)]. Topics under my supervision include:
+- Computer Graphics to Photorealistic Style Transfer for Sports Broadcasting
+- Multimodal Embeddings for Enhanced Video Content Search and Captioning
+- Automated Sports Commentary Generation with Expressive Speech Synthesis
+- Video Stabilization
+- Automatic video summarization for Broadcast News and Documentaries
+- Automatic Highlights Generation for Sport Broadcasting
+
+Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Vincent Botta](mailto:v.botta@evs.com), [Olivier Barnich](mailto:o.barnich@evs.com).
+
+
+## ~~⑪ Towards Data-Efficient Machine Learning for Aerodynamic Modeling via Transfer Learning (with Cenaero)~~
 
 The objective of this work is to investigate strategies for reducing the amount of data required to train accurate deep
 learning models for aerodynamic prediction. Building on existing databases, models, and simulation workflows, the
@@ -154,7 +200,7 @@ This MSc thesis project is proposed in collaboration with [Cenaero](https://www.
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Joachim Dominique](mailto:joachim.dominique@cenaero.be) (Cenaero).
 
 
-## ⑩ Monitoring and analyzing the energy consumption of a GPU cluster
+## ⑫ Monitoring and analyzing the energy consumption of a GPU cluster
 
 Our research group operates Alan, a GPU cluster with 15 compute nodes and approximately 95 GPUs, used for training and running deep learning models. As AI workloads grow in scale, understanding and optimizing the energy footprint of such infrastructure becomes increasingly important, both for sustainability and for cost management.
 
