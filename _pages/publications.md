@@ -11,6 +11,34 @@ This page is updated periodically and may not always reflect the most recent pub
 Legend: <span class="badge badge-preprint">pre-print</span> <span class="badge badge-conference">conference</span> <span class="badge badge-workshop">workshop</span> <span class="badge badge-journal">journal</span> <span class="badge badge-misc">miscellaneous</span>
 
 
+## 2026
+
+**Training-Free Bayesian Filtering with Generative Emulators**
+[:page_facing_up:](https://arxiv.org/abs/2605.20028)<br>
+Thomas Savary, François Rozet, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-conference">ICML 2026</span>
+
+**Bayesian inference for estimating generation costs in electricity markets**
+[:page_facing_up:](https://doi.org/10.1016/j.epsr.2026.113541)<br>
+Matthias Pirlet, Adrien Bolland, Alexandre Huynen, Quentin Louveaux, <span class="author-me">Gilles Louppe</span>, Damien Ernst.<br>
+<span class="badge badge-journal">Electric Power Systems Research</span>
+
+**Predict-Project-Renoise: Sampling Diffusion Models under Hard Constraints**
+[:page_facing_up:](https://arxiv.org/abs/2601.21033)<br>
+Omer Rochman, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-preprint">pre-print</span>
+
+**The Physical Limit of Neural Hypoxia Detection in the Black Sea from Satellite Observations**
+[:page_facing_up:](https://arxiv.org/abs/2604.25608)<br>
+Victor Mangeleer, Luc Vandenbulcke, Marilaure Grégoire, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-preprint">pre-print</span>
+
+**Generative cell phenotyping with structured latent populations**
+[:page_facing_up:](https://doi.org/10.64898/2026.06.30.735507)<br>
+Fanny Bodart, Adrien De Voeght, Frederic Baron, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-preprint">pre-print</span>
+
+
 ## 2025
 
 **Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation** 
@@ -39,9 +67,9 @@ Margaux Boxho, Joachim Dominique, T Benamara, Michel Rasquin, Lionel Salesses, C
 <span class="badge badge-journal">Physics of Fluids</span>
 
 **Panchromatic characterization of the Y0 brown dwarf WISEP J173835.52+273258.9 using JWST/MIRI** 
-[:page_facing_up:](https://arxiv.org/abs/2507.12264)<br>
+[:page_facing_up:](https://doi.org/10.1051/0004-6361/202554282)<br>
 Malavika Vasist, Paul Mollière, Helena Kühnle, Olivier Absil, <span class="author-me">Gilles Louppe</span>, Rens Waters, Manuel Güdel, Thomas Henning, David Barrado, Leen Decin, John Pye, Pascal Tremblin.<br>
-<span class="badge badge-preprint">pre-print</span>
+<span class="badge badge-journal">Astronomy & Astrophysics</span>
 
 **Simulation-Based Inference Benchmark for Weak Lensing Cosmology**
 [:page_facing_up:](https://doi.org/10.1051/0004-6361/202452410)<br>
@@ -62,6 +90,11 @@ The ATLAS collaboration.<br>
 [:page_facing_up:](https://arxiv.org/abs/2408.15753)  [:computer:](https://neuralmpm.isach.be/)<br>
 Omer Rochman Sharabi, Sacha Lewin, <span class="author-me">Gilles Louppe</span>.<br>
 <span class="badge badge-journal">TMLR</span>
+
+**Improving Semantic Uncertainty Quantification in LVLMs with Semantic Gaussian Processes**
+[:page_facing_up:](https://arxiv.org/abs/2512.14177)<br>
+Joseph Hoche, Andrei Bursuc, David Brellmann, <span class="author-me">Gilles Louppe</span>, Pavel Izmailov, Angela Yao, Gianni Franchi.<br>
+<span class="badge badge-preprint">pre-print</span>
 
 
 ## 2024
