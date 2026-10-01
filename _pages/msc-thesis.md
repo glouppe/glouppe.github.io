@@ -12,8 +12,8 @@ Weather and climate modeling :cyclone:
 - [Scaling latent diffusion models for weather forecasting](#-scaling-latent-diffusion-models-for-weather-forecasting)
 - [Generative models of sequences of arbitrary lengths](#-generative-models-of-sequences-of-arbitrary-lengths)
 - [Latent diffusion models for ocean emulation](#-latent-diffusion-models-for-ocean-emulation)
-- [Quantifying Information Requirements for Biogeochemical Field Reconstruction in the Black Sea](#-quantifying-information-requirements-for-biogeochemical-field-reconstruction-in-the-black-sea)
-- [Web demonstrators and MLOps for large weather models](#-web-demonstrators-and-mlops-for-large-weather-models)
+- [~~Quantifying Information Requirements for Biogeochemical Field Reconstruction in the Black Sea~~](#-quantifying-information-requirements-for-biogeochemical-field-reconstruction-in-the-black-sea)
+- [~~Web demonstrators and MLOps for large weather models~~](#-web-demonstrators-and-mlops-for-large-weather-models)
 
 Astronomy :telescope:
 - [Focal plane wavefront sensing for high-contrast imaging with transformers](#-focal-plane-wavefront-sensing-for-high-contrast-imaging-with-transformers)
@@ -74,7 +74,7 @@ In this project, we will explore whether latent diffusion models (LDMs) can impr
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Victor Mangeleer](mailto:vmangeleer@uliege.be), [Marilaure Grégoire](mailto:mgregoire@uliege.be).
 
 
-## ④ Quantifying Information Requirements for Biogeochemical Field Reconstruction in the Black Sea
+## ~~④ Quantifying Information Requirements for Biogeochemical Field Reconstruction in the Black Sea~~
 
 Measurements along the water column are one one of our main source of observations for the
 biogeochemistry of the ocean. However, sensors and ship campaigns through which these data
@@ -103,7 +103,7 @@ properties of our interest are preserved.
 Contact: [Gilles Louppe](mailto:g.louppe@uliege.be), [Federica Adobbati](mailto:fadobbati@uliege.be), [Marilaure Grégoire](mailto:mgregoire@uliege.be).
 
 
-## ⑤ Web demonstrators and MLOps for large weather models
+## ~~⑤ Web demonstrators and MLOps for large weather models~~
 
 Our research group develops large weather models, including [Appa](https://appa.montefiore.uliege.be) for global weather modeling and MAR.ai for regional climate modeling over Belgium. These models produce massive amounts of high-dimensional spatio-temporal data (global fields at 0.25° resolution, hourly time steps, multiple atmospheric variables and pressure levels) that need to be served efficiently and visualized interactively. Bridging the gap between research prototypes and production-grade deployment is a substantial engineering challenge that involves distributed inference, data pipelines at scale, and real-time web visualization of geospatial data.
 
