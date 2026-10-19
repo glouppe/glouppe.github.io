@@ -464,6 +464,9 @@ ninja.data = [{
           section: "News",},{id: "news-new-msc-thesis-for-2026-2027-in-the-fields-of-astronomy-health-and-sports-broadcasting-are-now-available-check-out-the-details-and-contact-us-if-you-are-interested-in-any-of-the-topics",
           title: 'New MSc thesis for 2026-2027 in the fields of astronomy, health, and sports...',
           description: "",
+          section: "News",},{id: "news-i-released-atrophy-a-short-noir-novella-about-learning-and-unlearning-in-the-age-of-ai-a-computer-science-freshman-an-ai-tab-always-open-every-sentence-was-written-by-claude-free-to-read-in-english-and-french-sources-on-github",
+          title: 'I released Atrophy, a short noir novella about learning, and unlearning, in the...',
+          description: "",
           section: "News",},{
         id: 'social-bluesky',
         title: 'Bluesky',
