@@ -13,6 +13,11 @@ Legend: <span class="badge badge-preprint">pre-print</span> <span class="badge b
 
 ## 2026
 
+**Predict-Project-Renoise: Sampling Diffusion Models under Hard Constraints**
+[:page_facing_up:](https://arxiv.org/abs/2601.21033)<br>
+Omer Rochman, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-conference">NeurIPS 2026</span>
+
 **Training-Free Bayesian Filtering with Generative Emulators**
 [:page_facing_up:](https://arxiv.org/abs/2605.20028)<br>
 Thomas Savary, François Rozet, <span class="author-me">Gilles Louppe</span>.<br>
@@ -23,11 +28,6 @@ Thomas Savary, François Rozet, <span class="author-me">Gilles Louppe</span>.<br
 Matthias Pirlet, Adrien Bolland, Alexandre Huynen, Quentin Louveaux, <span class="author-me">Gilles Louppe</span>, Damien Ernst.<br>
 <span class="badge badge-journal">Electric Power Systems Research</span>
 
-**Predict-Project-Renoise: Sampling Diffusion Models under Hard Constraints**
-[:page_facing_up:](https://arxiv.org/abs/2601.21033)<br>
-Omer Rochman, <span class="author-me">Gilles Louppe</span>.<br>
-<span class="badge badge-preprint">pre-print</span>
-
 **The Physical Limit of Neural Hypoxia Detection in the Black Sea from Satellite Observations**
 [:page_facing_up:](https://arxiv.org/abs/2604.25608)<br>
 Victor Mangeleer, Luc Vandenbulcke, Marilaure Grégoire, <span class="author-me">Gilles Louppe</span>.<br>
@@ -36,6 +36,16 @@ Victor Mangeleer, Luc Vandenbulcke, Marilaure Grégoire, <span class="author-me"
 **Generative cell phenotyping with structured latent populations**
 [:page_facing_up:](https://doi.org/10.64898/2026.06.30.735507)<br>
 Fanny Bodart, Adrien De Voeght, Frederic Baron, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-preprint">pre-print</span>
+
+**An Introduction to Bayesian and Frequentist Simulation-Based Inference with Machine Learning**
+[:page_facing_up:](https://arxiv.org/abs/2607.21702)<br>
+Maximilian Dax, Theo Heimel, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-preprint">pre-print</span>
+
+**Accounting for Hysteresis and Eddy Currents in Finite Element Simulations of Ferromagnetic Laminated Cores using a Recurrent Neural Network**
+[:page_facing_up:](https://arxiv.org/abs/2607.14321) [:computer:](https://gitlab.onelab.info/getdp/lamnet)<br>
+Florent Purnode, Louis Denis, François Henrotte, <span class="author-me">Gilles Louppe</span>, Christophe Geuzaine.<br>
 <span class="badge badge-preprint">pre-print</span>
 
 
