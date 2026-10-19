@@ -467,6 +467,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-released-atrophy-a-short-noir-novella-about-learning-and-unlearning-in-the-age-of-ai-a-computer-science-freshman-an-ai-tab-always-open-every-sentence-was-written-by-claude-free-to-read-in-english-and-french-sources-on-github",
           title: 'I released Atrophy, a short noir novella about learning, and unlearning, in the...',
           description: "",
+          section: "News",},{id: "news-omer-s-paper-predict-project-renoise-sampling-diffusion-models-under-hard-constraints-has-been-accepted-at-neurips-2026-congratulations",
+          title: 'Omer’s paper Predict-Project-Renoise: Sampling Diffusion Models under Hard Constraints has been accepted at...',
+          description: "",
           section: "News",},{
         id: 'social-bluesky',
         title: 'Bluesky',
