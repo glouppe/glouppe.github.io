@@ -225,6 +225,21 @@ Renaud Vandeghen, <span class="author-me">Gilles Louppe</span>, Marc Van Droogen
 Arnaud Delaunoy, Joeri Hermans, François Rozet, Antoine Wehenkel, <span class="author-me">Gilles Louppe</span>.<br>
 <span class="badge badge-conference">NeurIPS 2022</span> 
 
+**Differentiable composition for model discovery**
+[:page_facing_up:](https://orbi.uliege.be/bitstream/2268/309362/1/NeurIPS_ML4PS_2022_53.pdf)<br>
+Omer Rochman Sharabi, <span class="author-me">Gilles Louppe</span>.<br>
+<span class="badge badge-workshop">ML4PS workshop, NeurIPS 2022</span>
+
+**A Material Law Based on Neural Networks and Homogenization for the Accurate Finite Element Simulation of Laminated Ferromagnetic Cores in the Periodic Regime**
+[:page_facing_up:](https://doi.org/10.1109/TMAG.2022.3160651)<br>
+Florent Purnode, François Henrotte, François Caire, Joaquim Da Silva, <span class="author-me">Gilles Louppe</span>, Christophe Geuzaine.<br>
+<span class="badge badge-journal">IEEE Transactions on Magnetics</span>
+
+**Neural Posterior Estimation of hierarchical models in neuroscience**
+[:page_facing_up:](https://hal.science/hal-03858828)<br>
+Julia Linhart, Pedro L. C. Rodrigues, Thomas Moreau, <span class="author-me">Gilles Louppe</span>, Alexandre Gramfort.<br>
+<span class="badge badge-conference">GRETSI 2022</span>
+
 **A Trust Crisis In Simulation-Based Inference? Your Posterior Approximations Can Be Unfaithful**
 [:page_facing_up:](https://arxiv.org/abs/2110.06581)<br>
 Joeri Hermans, Arnaud Delaunoy, François Rozet, Antoine Wehenkel, and <span class="author-me">Gilles Louppe</span>.<br>
@@ -327,6 +342,11 @@ Antoine Wehenkel and <span class="author-me">Gilles Louppe</span><br>
 [:page_facing_up:](https://doi.org/10.1080/10619127.2021.1881364)<br>
 Atılım Güneş Baydin et al.<br>
 <span class="badge badge-journal">Nuclear Physics News</span> 
+
+**QVMix and QVMix-Max: Extending the Deep Quality-Value Family of Algorithms to Cooperative Multi-Agent Reinforcement Learning**
+[:page_facing_up:](https://arxiv.org/abs/2012.12062)<br>
+Pascal Leroy, Damien Ernst, Pierre Geurts, <span class="author-me">Gilles Louppe</span>, Jonathan Pisane, Matthia Sabatelli.<br>
+<span class="badge badge-workshop">RLG workshop, AAAI 2021</span>
 
 
 ## 2020
