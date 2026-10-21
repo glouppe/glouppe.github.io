@@ -170,40 +170,20 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
-  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
   - LICENSE
-  - lighthouse_results/
+  - README.md
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
-  - README.md
-  - readme_preview/
   - vendor
-  - _pages/dropdown.md
-  - _pages/about_einstein.md 
-  - _pages/books.md 
-  - _pages/repositories.md
-  - _includes/repository/*.liquid
-  - _pages/projects.md
-  # al-folio demo content, kept in the repo but not published
-  - _pages/cv.md
-  - _pages/blog.md
   - _pages/publications-auto.md
-  - _posts/
-  - _books/
-  - _projects/
   - scripts/
   - requirements.txt
-  - _projects/*.md
   - _includes/projects*.liquid
 keep_files:
   - CNAME
