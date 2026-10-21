@@ -177,6 +177,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - CLAUDE.md
   - package.json
   - package-lock.json
   - purgecss.config.js
