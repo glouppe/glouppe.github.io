@@ -1,0 +1,573 @@
+/*******************************************************************************
+ * "Lab notebook" skin, layered on top of the al-folio base styles.
+ * IBM Plex Sans for text, IBM Plex Mono for structure (nav, headings, dates,
+ * venues). White paper, black ink, one strong blue accent.
+ * Remove the import in assets/css/main.scss to go back to stock al-folio.
+ ******************************************************************************/
+
+$font-sans: "IBM Plex Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+:root {
+  --nb-paper: #ffffff;
+  --nb-ink: #0d0d0d;
+  --nb-ink-soft: #3a3d42;
+  --nb-ink-faint: #6b7079;
+  --nb-accent: #0a5fc2;
+  --nb-rule: #dcdfe3;
+  --nb-grid: rgba(13, 13, 13, 0.06);
+
+  --global-bg-color: var(--nb-paper);
+  --global-card-bg-color: var(--nb-paper);
+  --global-text-color: var(--nb-ink);
+  --global-text-color-light: var(--nb-ink-soft);
+  --global-theme-color: var(--nb-accent);
+  --global-hover-color: var(--nb-accent);
+  --global-divider-color: var(--nb-rule);
+  --global-footer-bg-color: var(--nb-paper);
+  --global-footer-text-color: var(--nb-ink-faint);
+  --global-footer-link-color: var(--nb-ink-soft);
+}
+
+html[data-theme="dark"] {
+  --nb-paper: #0e1013;
+  --nb-ink: #f2f3f5;
+  --nb-ink-soft: #c4c8ce;
+  --nb-ink-faint: #8f959e;
+  --nb-accent: #5ea8ff;
+  --nb-rule: #30343b;
+  --nb-grid: rgba(242, 243, 245, 0.05);
+
+  --global-bg-color: var(--nb-paper);
+  --global-card-bg-color: var(--nb-paper);
+  --global-text-color: var(--nb-ink);
+  --global-text-color-light: var(--nb-ink-soft);
+  --global-theme-color: var(--nb-accent);
+  --global-hover-color: var(--nb-accent);
+  --global-divider-color: var(--nb-rule);
+  --global-footer-bg-color: var(--nb-paper);
+  --global-footer-text-color: var(--nb-ink-faint);
+  --global-footer-link-color: var(--nb-ink-soft);
+}
+
+// Paper: a faint dotted grid, like an engineering notebook
+
+body {
+  font-family: $font-sans;
+  font-weight: 400;
+  background-color: var(--nb-paper);
+  background-image: radial-gradient(var(--nb-grid) 1px, transparent 1.2px);
+  background-size: 22px 22px;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+strong {
+  font-weight: 600;
+}
+
+// Links: quiet ink-blue, underline on hover only
+
+a,
+table.table a {
+  color: var(--nb-accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: var(--nb-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+}
+
+// Headings: monospace, with a markdown-style prefix
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-mono;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.post-header .post-title,
+.post article h2 {
+  &::before {
+    color: var(--nb-ink-faint);
+    font-weight: 400;
+  }
+}
+
+.post-header .post-title {
+  font-size: 2.1rem;
+  font-weight: 600;
+
+  &::before {
+    content: "# ";
+  }
+
+  .font-weight-bold {
+    font-weight: 600 !important;
+  }
+}
+
+.post article h2 {
+  font-size: 1.35rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+
+  &::before {
+    content: "## ";
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.post article h3 {
+  font-size: 1.1rem;
+}
+
+.post-header .desc {
+  font-family: $font-mono;
+  font-size: 0.9rem;
+  color: var(--nb-ink-soft);
+
+  &::before {
+    content: "> ";
+    color: var(--nb-accent);
+  }
+}
+
+// Navbar
+
+.navbar {
+  background-color: var(--nb-paper);
+  opacity: 1; // the theme's translucency lets scrolled text bleed through
+  font-family: $font-mono;
+  font-size: 0.9rem;
+
+  .navbar-brand {
+    font-family: $font-mono;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--nb-ink);
+    letter-spacing: -0.01em;
+
+    .prompt {
+      color: var(--nb-accent);
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: var(--nb-accent);
+    }
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: var(--nb-ink);
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+
+    &:hover {
+      color: var(--nb-ink);
+      text-decoration: none;
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 600;
+    color: var(--nb-accent);
+
+    &::before {
+      content: "./";
+      color: var(--nb-accent);
+    }
+  }
+}
+
+// Profile picture: no drop shadow, thin frame, 20% smaller than al-folio's
+
+.profile {
+  width: 80%;
+  float: none !important;
+  margin: 0 auto 1rem;
+}
+
+@media (min-width: 576px) {
+  .profile {
+    width: 24%;
+    margin: 0 0 1rem 1.5rem;
+  }
+
+  .profile.float-right {
+    float: right !important;
+  }
+
+  .profile.float-left {
+    float: left !important;
+    margin: 0 1.5rem 1rem 0;
+  }
+}
+
+.profile img {
+  box-shadow: none !important;
+  border: 1px solid var(--nb-rule);
+  padding: 4px;
+  background: var(--nb-paper);
+}
+
+// News: ISO dates in a mono gutter, hairline rules between items
+
+.news {
+  table {
+    border-collapse: collapse;
+  }
+
+  tr + tr {
+    border-top: 1px dashed var(--nb-rule);
+  }
+
+  th,
+  td {
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+  }
+
+  th {
+    font-family: $font-mono;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--nb-ink-soft);
+    white-space: nowrap;
+    width: 8.5rem !important;
+    padding-top: 0.75rem !important;
+  }
+}
+
+// Publications: keep the colour-coded badges, set in mono
+
+.badge {
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  border-radius: 2px;
+  padding: 0.2em 0.45em;
+  box-shadow: none;
+}
+
+// The base theme ties badge text to the card background, which turns it
+// dark on dark mode; keep it white on the coloured fills in both modes.
+.badge[class*="badge-"] {
+  color: #ffffff !important;
+}
+
+// Paper and code links after a publication title
+a.pub-link {
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-left: 0.35em;
+  padding: 0.15em 0.4em;
+  border: 1px solid var(--nb-rule);
+  border-radius: 2px;
+  vertical-align: 0.12em;
+
+  &:hover {
+    text-decoration: none;
+    border-color: var(--nb-accent);
+  }
+}
+
+.author-me {
+  font-weight: 500;
+  border-bottom: 1px solid var(--nb-accent);
+}
+
+// Footer
+
+footer {
+  font-family: $font-mono;
+  font-size: 0.8rem;
+  border-top: 1px solid var(--nb-rule);
+
+  .container {
+    color: var(--nb-ink-faint);
+  }
+}
+
+// Inline code
+
+code {
+  font-family: $font-mono;
+  color: var(--nb-ink);
+}
+
+// Landing-page hero: the flow seen through a coarse instrument (see
+// assets/js/hero.js). Full-bleed, flush under the navbar. Without JavaScript,
+// a still poster shows instead. Colours go through unquote() because the
+// minifier mangles white rgba() values into invalid hsla().
+
+:root {
+  --hero-bg: #f4f1ee;
+  --hero-poster: url("../img/flow-light.jpg");
+  --hero-box-bg: #{unquote("rgba(255, 255, 255, 0.78)")};
+  --hero-box-text: #0d0d0d;
+  --hero-box-soft: #3a3d42;
+  --hero-box-prefix: #{unquote("rgba(13, 13, 13, 0.4)")};
+  --hero-shade: #{unquote("rgba(255, 255, 255, 0.35)")};
+}
+
+html[data-theme="dark"] {
+  --hero-bg: #101218;
+  --hero-poster: url("../img/flow-dark.jpg");
+  --hero-box-bg: #{unquote("rgba(8, 10, 14, 0.66)")};
+  --hero-box-text: #ffffff;
+  --hero-box-soft: #{unquote("rgba(255, 255, 255, 0.85)")};
+  --hero-box-prefix: #{unquote("rgba(255, 255, 255, 0.5)")};
+  --hero-shade: #{unquote("rgba(0, 0, 0, 0.45)")};
+}
+
+html {
+  overflow-x: clip; // the full-bleed hero is 100vw wide
+}
+
+// Aligns the overlays with the text column; see the breakpoint below.
+// (Sass folds the constant: the minifier drops the spaces around a "+".)
+$hero-inset: calc(50vw - #{$max-content-width / 2 - 15px});
+
+.post-header.hero {
+  position: relative;
+  width: 100vw;
+  height: clamp(272px, 50vh, 464px);
+  margin-left: calc(50% - 50vw);
+  margin-top: -3rem; // flush under the navbar
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  background: var(--hero-bg) var(--hero-poster) center / cover;
+  touch-action: pan-y;
+  cursor: crosshair;
+
+  .hero-video,
+  .hero-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &.hero-live .hero-video {
+    opacity: 0; // still decoded, drawn into the canvas
+  }
+
+  // Softens the bottom edge, where the name box sits
+  &::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 40%;
+    background: linear-gradient(to top, var(--hero-shade), transparent);
+    pointer-events: none;
+  }
+
+  .hero-box {
+    z-index: 1;
+    position: absolute;
+    left: $hero-inset;
+    bottom: 2rem;
+    max-width: calc(100vw - 2rem);
+    padding: 1rem 1.4rem 0.9rem;
+    background: var(--hero-box-bg);
+    backdrop-filter: blur(4px);
+    border-radius: 3px;
+    cursor: auto;
+  }
+
+  .post-title,
+  .post-title span {
+    color: var(--hero-box-text);
+    font-size: 2.6rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .post-title::before {
+    color: var(--hero-box-prefix);
+  }
+
+  .desc {
+    color: var(--hero-box-soft);
+    margin-bottom: 0;
+  }
+
+  .hero-legend {
+    z-index: 1;
+    position: absolute;
+    top: 1rem;
+    right: $hero-inset;
+    padding: 0.45rem 0.7rem;
+    background: var(--hero-box-bg);
+    backdrop-filter: blur(4px);
+    border-radius: 3px;
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    line-height: 1.7;
+    pointer-events: none;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      color: var(--hero-box-soft);
+    }
+
+    svg {
+      fill: var(--hero-box-text);
+      flex: none;
+    }
+
+    i {
+      color: var(--hero-box-text);
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: #{$max-content-width + 30px}) {
+  .post-header.hero {
+    .hero-box {
+      left: 1rem;
+    }
+
+    .hero-legend {
+      right: 1rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .post-header.hero {
+    height: 240px;
+
+    .hero-box {
+      left: 0.75rem;
+      right: 0.75rem;
+      bottom: 0.75rem;
+      max-width: none;
+    }
+
+    .post-title,
+    .post-title span {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+// Footer: one row, text on the left and small social icons on the right
+
+footer.sticky-bottom {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .container {
+    text-align: left;
+  }
+}
+
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding: 1.1rem 0;
+}
+
+footer .footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  font-size: 1.05rem;
+  line-height: 1;
+
+  a {
+    color: var(--nb-ink-soft);
+
+    &:hover {
+      color: var(--nb-accent);
+      text-decoration: none;
+    }
+  }
+
+  // Some profiles ship image icons instead of glyphs
+  img {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .footer-row {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+// Contact details on the about page: glyphs instead of labels
+
+ul.contact-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7em;
+  }
+
+  i {
+    width: 1em;
+    text-align: center;
+    color: var(--nb-ink-faint);
+  }
+}
+
+// Teaching: a light frame around the slide thumbnail strips
+
+img.course-thumbs {
+  border: 1px solid var(--nb-rule);
+  border-radius: 3px;
+  padding: 6px;
+  background: #ffffff;
+  margin: 0.25rem 0 0.5rem;
+}
+
+// MSc thesis topics: category labels above each list
+
+p.topic-group {
+  font-family: $font-mono;
+  font-weight: 600;
+  margin: 1.4rem 0 0.4rem;
+}
+
+// Publications: the year stays pinned under the navbar while scrolling
+
+.post article h2.pub-year {
+  position: sticky;
+  top: 56px; // navbar height
+  z-index: 2;
+  margin-top: 2rem;
+  padding: 0.5rem 0 0.4rem;
+  background: var(--nb-paper);
+  border-bottom: 1px solid var(--nb-rule);
+}

@@ -13,7 +13,7 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # social icons are in the footer, on every page
 
 announcements:
   enabled: true # includes a list of news items
@@ -42,5 +42,6 @@ My research efforts are focused on the development of **deep learning models and
 
 You can reach me by email (preferred, but not always fastest) or visit me at my office.
 
-- Mail: [g.louppe@uliege.be](mailto:g.louppe@uliege.be)
-- Office: B28/1.112, Montefiore Institute, University of Liège
+- <i class="fa-solid fa-envelope" title="Mail"></i> [g.louppe@uliege.be](mailto:g.louppe@uliege.be)
+- <i class="fa-solid fa-location-dot" title="Office"></i> B28/1.112, Montefiore Institute, University of Liège
+{:.contact-list}

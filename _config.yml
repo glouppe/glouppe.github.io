@@ -10,10 +10,10 @@ contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Theme adapted from <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: # jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.svg # a coarse "observation" in the hero colours (an emoji also works here)
 
 url: https://glouppe.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -141,13 +141,13 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
     output: true
   projects:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -194,6 +194,15 @@ exclude:
   - _pages/repositories.md
   - _includes/repository/*.liquid
   - _pages/projects.md
+  # al-folio demo content, kept in the repo but not published
+  - _pages/cv.md
+  - _pages/blog.md
+  - _pages/publications-auto.md
+  - _posts/
+  - _books/
+  - _projects/
+  - scripts/
+  - requirements.txt
   - _projects/*.md
   - _includes/projects*.liquid
 keep_files:
@@ -445,7 +454,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,600|IBM+Plex+Mono:400,500,600|Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

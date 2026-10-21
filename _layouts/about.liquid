@@ -2,17 +2,48 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+  <header class="post-header hero">
+    <video
+      class="hero-video"
+      data-light="{{ '/assets/video/flow-light.mp4' | relative_url }}"
+      data-dark="{{ '/assets/video/flow-dark.mp4' | relative_url }}"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    ></video>
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-legend" aria-hidden="true">
+      <div>
+        <svg viewBox="0 0 12 12" width="12" height="12">
+          <rect x="0" y="0" width="5.5" height="5.5" opacity="0.9" />
+          <rect x="6.5" y="0" width="5.5" height="5.5" opacity="0.45" />
+          <rect x="0" y="6.5" width="5.5" height="5.5" opacity="0.45" />
+          <rect x="6.5" y="6.5" width="5.5" height="5.5" opacity="0.9" />
+        </svg>
+        <span><i>y</i>, the observation</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 12 12" width="12" height="12">
+          <path d="M2 0.5 L2 10.5 L4.6 8.1 L6.4 11.8 L8 11 L6.2 7.4 L9.8 7.2 Z" />
+        </svg>
+        <span><i>x</i> ~ p(<i>x</i> | <i>y</i>)</span>
+      </div>
+    </div>
+    <div class="hero-box">
+      <h1 class="post-title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+    </div>
   </header>
+  <script src="{{ '/assets/js/hero.js' | relative_url | bust_file_cache }}" defer></script>
 
   <article>
     {% if page.profile %}
@@ -58,6 +89,14 @@ layout: default
         link-target="_blank"
         {% if page.bluesky.disable_images %}disable-images="true"{% endif %}
         {% if page.bluesky.disable_videos %}disable-videos="true"{% endif %}
+        custom-styles="
+          :host, section, article { font-family: inherit; color: var(--global-text-color); }
+          section { max-width: none !important; margin: 0 !important; align-items: stretch !important; }
+          article { padding: 0.9rem 0 !important; border-bottom: 1px dashed var(--global-divider-color) !important; }
+          section > div:last-of-type > article { border-bottom: none !important; }
+          a { color: inherit; }
+          p { color: var(--global-text-color) !important; }
+        "
       ></bsky-embed>
     {% endif %}
 

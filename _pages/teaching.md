@@ -11,7 +11,7 @@ Next to research, I also teach courses at the University of Liège, mainly to st
 
 ## INFO8006 Introduction to Artificial Intelligence 
 
-![](/assets/img/info8006.png)
+![](/assets/img/info8006.png){:.course-thumbs}
 
 This course offers an introduction to artificial intelligence, covering both the foundational concepts of intelligent agents and the immediate applications of AI in science and engineering. Lectures are based on several chapters of the textbook "Artificial Intelligence: A modern approach" (S. Russel and P. Norvig) used worldwide since 1995 for teaching the essentials of AI. The course also integrates some of the latest developments in the field, including machine learning and neural networks.
 
@@ -26,12 +26,12 @@ This course offers an introduction to artificial intelligence, covering both the
 - Lecture 8: Making decisions
 - Lecture 9: Reinforcement learning
 
-Materials: [slides](https://github.com/glouppe/info8006-introduction-to-ai) :page_facing_up:, [recordings](https://www.youtube.com/playlist?list=PLLqXZ_E-UXly_dVpKfgzuga61h7z8XjbK) :video_camera:
+Materials: [slides](https://github.com/glouppe/info8006-introduction-to-ai){:.pub-link} [recordings](https://www.youtube.com/playlist?list=PLLqXZ_E-UXly_dVpKfgzuga61h7z8XjbK){:.pub-link}
 
 
 ## INFO8010 Deep Learning
 
-![](/assets/img/info8010.png)
+![](/assets/img/info8010.png){:.course-thumbs}
 
 In an age where sophisticated algorithms drive innovation, deep learning stands at the forefront, underpinning many breakthroughs in science and engineering. From advancing medical diagnostics with image recognition, to reshaping natural language processing, deep learning has become indispensable across many domains.
 
@@ -50,12 +50,12 @@ In this context, this course offers an immersive exploration of deep neural netw
 - Lecture 11: Auto-encoders and variational auto-encoders
 - Lecture 12: Diffusion models
 
-Materials: [slides](https://github.com/glouppe/info8010-deep-learning) :page_facing_up:, [recordings](https://www.youtube.com/playlist?list=PLLqXZ_E-UXlxV-ybsjk4rwXlKF6LsYHFV) :video_camera:
+Materials: [slides](https://github.com/glouppe/info8010-deep-learning){:.pub-link} [recordings](https://www.youtube.com/playlist?list=PLLqXZ_E-UXlxV-ybsjk4rwXlKF6LsYHFV){:.pub-link}
 
 
 ## DATS0001 Foundations of Data Science
 
-![](/assets/img/dats0001.png)
+![](/assets/img/dats0001.png){:.course-thumbs}
 
 Data science is rooted in a rigorous and systematic methodology for understanding and interpreting data. This course seeks to instil the foundational principles of data science, with a particular emphasis on the scientific method and the iterative process of Bayesian modelling. Our perspective is that models are built iteratively: We build a model, use it to analyze data, assess how it succeeds and fails, revise it based on insights, and repeat. 
 
@@ -70,7 +70,7 @@ Data science is rooted in a rigorous and systematic methodology for understandin
 - Lecture 9: Model criticism and comparison
 - Lecture 10: Wrap-up case study
 
-Materials: [slides](https://github.com/glouppe/dats0001-foundations-of-data-science) :page_facing_up:
+Materials: [slides](https://github.com/glouppe/dats0001-foundations-of-data-science){:.pub-link}
 
 
 ## INFO8004 Advanced Machine Learning
@@ -79,7 +79,7 @@ The goal of this course is to prepare students for the study of state-of-the-art
 The class is organized as a journal club, with reading and presentation assignments of recent machine learning research papers. 
 In terms of content, this course focuses on advanced topics in machine learning, deep learning, and artificial intelligence.
 
-Materials: [slides](https://github.com/glouppe/info8004-advanced-machine-learning) :page_facing_up:
+Materials: [slides](https://github.com/glouppe/info8004-advanced-machine-learning){:.pub-link}
 
 
 ## Archived courses

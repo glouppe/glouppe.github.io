@@ -9,6 +9,7 @@ nav_order: 5
 MSc thesis topics for 2026-2027 are proposed below. The topics are generally available for students with a background in deep learning, regardless of their specific field of study. The list is non-exhaustive, feel free to come and discuss with me.
 
 Weather and climate modeling :cyclone:
+{:.topic-group}
 - [Scaling latent diffusion models for weather forecasting](#-scaling-latent-diffusion-models-for-weather-forecasting)
 - [Generative models of sequences of arbitrary lengths](#-generative-models-of-sequences-of-arbitrary-lengths)
 - [Latent diffusion models for ocean emulation](#-latent-diffusion-models-for-ocean-emulation)
@@ -16,14 +17,17 @@ Weather and climate modeling :cyclone:
 - [~~Web demonstrators and MLOps for large weather models~~](#-web-demonstrators-and-mlops-for-large-weather-models)
 
 Astronomy :telescope:
+{:.topic-group}
 - [Focal plane wavefront sensing for high-contrast imaging with transformers](#-focal-plane-wavefront-sensing-for-high-contrast-imaging-with-transformers)
 
 Health :syringe:
+{:.topic-group}
 - [Deep Sets for classification of flow cytometry data](#-deep-sets-for-classification-of-flow-cytometry-data)
 - [Automated karyotyping with deep learning](#-automated-karyotyping-with-deep-learning)
 - [Deep learning for predicting 2-year epileptic seizure recurrence from clinical EEGs](#-deep-learning-for-predicting-2-year-epileptic-seizure-recurrence-from-clinical-eegs)
 
 Industrial applications :soccer:
+{:.topic-group}
 - [Generative models for sports broadcasting (with EVS Broadcast Equipment)](#-generative-models-for-sports-broadcasting-with-evs-broadcast-equipment)
 - [~~Towards Data-Efficient Machine Learning for Aerodynamic Modeling via Transfer Learning (with Cenaero)~~](#-towards-data-efficient-machine-learning-for-aerodynamic-modeling-via-transfer-learning-with-cenaero)
 - [Monitoring and analyzing the energy consumption of a GPU cluster](#-monitoring-and-analyzing-the-energy-consumption-of-a-gpu-cluster)
