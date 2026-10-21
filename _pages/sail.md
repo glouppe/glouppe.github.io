@@ -45,6 +45,7 @@ Our main research areas include inverse problems, simulation-based inference, an
   topics_ai="neural emulators, data assimilation"
   topics_science="oceanography"
   image="./assets/img/faces/victor.jpg"
+  url="https://vikvador.github.io/"
 %}
 
 {% include person.liquid
@@ -117,6 +118,7 @@ Our main research areas include inverse problems, simulation-based inference, an
   topics_ai="foundation models, physics-informed deep learning"
   topics_science=""
   image="./assets/img/faces/yakup.jpg"
+  url="https://yakupemresahin.github.io/"
 %}
 
 
@@ -139,6 +141,7 @@ Our main research areas include inverse problems, simulation-based inference, an
   topics_science="astronomy, exoplanets"
   image="./assets/img/faces/malavika.jpg"
   alumni=true
+  url="https://malavikavasist.github.io/"
 %}
 
 {% include person.liquid
@@ -148,6 +151,7 @@ Our main research areas include inverse problems, simulation-based inference, an
   topics_ai="simulation-based inference, bayesian deep learning"
   image="./assets/img/faces/arnaud.jpg"
   alumni=true
+  url="https://adelau.github.io/"
 %}
 
 {% include person.liquid
