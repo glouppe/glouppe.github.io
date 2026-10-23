@@ -19,16 +19,6 @@ Our main research areas include inverse problems, simulation-based inference, an
 %}
 
 {% include person.liquid
-  name="Omer Rochman"
-  title="PhD student"
-  time="2021"
-  topics_ai="neural emulators"
-  topics_science="physics"
-  image="./assets/img/faces/omer.jpg"
-  url="https://omerrochman.github.io/"
-%}
-
-{% include person.liquid
   name="Gérôme Andry"
   title="PhD student"
   time="2023"
@@ -125,11 +115,23 @@ Our main research areas include inverse problems, simulation-based inference, an
 ## Alumni
 
 {% include person.liquid
+  name="Omer Rochman"
+  title="PhD student"
+  time="2021-2026"
+  topics_ai="neural emulators"
+  topics_science="physics"
+  image="./assets/img/faces/omer.jpg"
+  alumni=true
+  url="https://omerrochman.github.io/"
+%}
+
+{% include person.liquid
   name="François Rozet"
   title="PhD student"
   time="2021-2025"
   topics_ai="diffusion models, inverse problems, data assimilation"
   image="./assets/img/faces/francois.jpg"
+  alumni=true
   url="https://francois-rozet.github.io/"
 %}
 
