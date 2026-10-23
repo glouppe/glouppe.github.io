@@ -124,6 +124,9 @@ ninja.data = [{
           section: "News",},{id: "news-omer-s-paper-predict-project-renoise-sampling-diffusion-models-under-hard-constraints-has-been-accepted-at-neurips-2026-congratulations",
           title: 'Omer’s paper Predict-Project-Renoise: Sampling Diffusion Models under Hard Constraints has been accepted at...',
           description: "",
+          section: "News",},{id: "news-congratulations-to-omer-for-defending-his-phd-thesis-data-driven-models-of-physical-systems-efficiency-consistency-and-inference-at-scale-ocean-say-hi-to-the-sf-fog-fog",
+          title: 'Congratulations to Omer for defending his PhD thesis Data-Driven Models of Physical Systems:...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
